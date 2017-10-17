@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ErhardtAbt.Extensions.IDictionaryEx {
+namespace GCore.Extensions.IDictionaryEx {
     public static class IDictionaryExtensions {
         /// <summary>
         /// Gibt den Wehrt für den Key zurück oder den Standartwehrt,

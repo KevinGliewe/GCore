@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 
-namespace ErhardtAbt.Extensions.SizeEx {
+namespace GCore.Extensions.SizeEx {
     public static class SizeExtensions {
         /// <summary>
         /// Addiert zu der Goße den übergebenen Wehrt hinzu.
