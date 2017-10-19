@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCore", "GCore\GCore.csproj", "{DF84B40C-7114-49C7-A146-3FB58AC23688}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GCore", "GCore\GCore.csproj", "{DF84B40C-7114-49C7-A146-3FB58AC23688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GCore.Test", "GCore.Test\GCore.Test.csproj", "{4C3C92E8-F58F-4988-A5FF-96FEB3EF1742}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DF84B40C-7114-49C7-A146-3FB58AC23688}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF84B40C-7114-49C7-A146-3FB58AC23688}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF84B40C-7114-49C7-A146-3FB58AC23688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C3C92E8-F58F-4988-A5FF-96FEB3EF1742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C3C92E8-F58F-4988-A5FF-96FEB3EF1742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C3C92E8-F58F-4988-A5FF-96FEB3EF1742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C3C92E8-F58F-4988-A5FF-96FEB3EF1742}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
