@@ -54,7 +54,9 @@ namespace GCore.Extensions.ArrayEx {
             if (start < 0) {
                 start = source.Length - start;
             }
-            int len = end - start;
+            int len = end - start + 1;
+
+            if(len < 0) len = 0;
 
             // Return new array.
             T[] res = new T[len];

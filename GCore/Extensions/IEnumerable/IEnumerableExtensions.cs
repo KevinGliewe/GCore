@@ -51,7 +51,7 @@ namespace GCore.Extensions.IEnumerableEx {
 
             if (step == 0) throw new ArgumentException("Step cannot be zero.", "step");
 
-            IList<T> sourceCollection = source as IList<T>;
+            IList<T> sourceCollection = source.ToIList();
             if (sourceCollection == null) {
                 source = new List<T>(source);
                 sourceCollection = source as IList<T>;
@@ -77,7 +77,7 @@ namespace GCore.Extensions.IEnumerableEx {
             stopIndex = Math.Max(stopIndex, -1);
             stopIndex = Math.Min(stopIndex, sourceCollection.Count);
 
-            for (int i = startIndex; (stepCount > 0) ? i < stopIndex : i > stopIndex; i += stepCount) {
+            for (int i = startIndex; (stepCount > 0) ? i <= stopIndex : i > stopIndex; i += stepCount) {
                 yield return sourceCollection[i];
             }
 
@@ -180,6 +180,26 @@ namespace GCore.Extensions.IEnumerableEx {
                 if (callback(t))
                     return t;
             return default(T);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public static IList<T> ToIList<T>(this IEnumerable<T> source) {
+            List<T> ret = new List<T>();
+            foreach(var i in source)
+                ret.Add(i);
+            return ret;
+        }
+
+        public static T[] ToArr<T>(this IEnumerable<T> source) {
+            List<T> ret = new List<T>();
+            foreach(var i in source)
+                ret.Add(i);
+            return ret.ToArray();
         }
 
 
