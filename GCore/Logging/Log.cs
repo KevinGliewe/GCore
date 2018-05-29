@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace GCore.Logging {
     public static class Log {
@@ -28,46 +29,55 @@ namespace GCore.Logging {
         }
 
         private static void DoLog(LogEntry logEntry) {
-            if (OnLog != null)
-                try {
-                    OnLog(logEntry);
-                } catch (Exception ex) { }
-            foreach (ILoggingHandler handler in LoggingHandler) {
-                try {
-                    handler.General(logEntry);
-
-                    switch (logEntry.LogType) {
-                        case LogEntry.LogTypes.Success:
-                            handler.Success(logEntry.TimeStamp, logEntry.Message, logEntry.StackTrace, logEntry.Params);
-                            break;
-
-                        case LogEntry.LogTypes.Info:
-                            handler.Info(logEntry.TimeStamp, logEntry.Message, logEntry.StackTrace, logEntry.Params);
-                            break;
-
-                        case LogEntry.LogTypes.Warn:
-                            handler.Warn(logEntry.TimeStamp, logEntry.Message, logEntry.StackTrace, logEntry.Params);
-                            break;
-
-                        case LogEntry.LogTypes.Debug:
-                            handler.Debug(logEntry.TimeStamp, logEntry.Message, logEntry.StackTrace, logEntry.Params);
-                            break;
-
-                        case LogEntry.LogTypes.Exception:
-                            handler.Exaption(logEntry.TimeStamp, logEntry.Message, logEntry.Exception, logEntry.StackTrace, logEntry.Params);
-                            break;
-
-                        case LogEntry.LogTypes.Error:
-                            handler.Error(logEntry.TimeStamp, logEntry.Message, logEntry.StackTrace, logEntry.Params);
-                            break;
-
-                        case LogEntry.LogTypes.Fatal:
-                            handler.Fatal(logEntry.TimeStamp, logEntry.Message, logEntry.StackTrace, logEntry.Params);
-                            break;
-
+            Task.Run(() =>
+            {
+                if (OnLog != null)
+                    try
+                    {
+                        OnLog(logEntry);
                     }
-                } catch (Exception ex) { }
-            }
+                    catch (Exception ex) { System.Diagnostics.Debug.Write(ex.ToString()); }
+                foreach (ILoggingHandler handler in LoggingHandler)
+                {
+                    try
+                    {
+                        handler.General(logEntry);
+
+                        switch (logEntry.LogType)
+                        {
+                            case LogEntry.LogTypes.Success:
+                                handler.Success(logEntry.TimeStamp, logEntry.Message, logEntry.StackTrace, logEntry.Params);
+                                break;
+
+                            case LogEntry.LogTypes.Info:
+                                handler.Info(logEntry.TimeStamp, logEntry.Message, logEntry.StackTrace, logEntry.Params);
+                                break;
+
+                            case LogEntry.LogTypes.Warn:
+                                handler.Warn(logEntry.TimeStamp, logEntry.Message, logEntry.StackTrace, logEntry.Params);
+                                break;
+
+                            case LogEntry.LogTypes.Debug:
+                                handler.Debug(logEntry.TimeStamp, logEntry.Message, logEntry.StackTrace, logEntry.Params);
+                                break;
+
+                            case LogEntry.LogTypes.Exception:
+                                handler.Exaption(logEntry.TimeStamp, logEntry.Message, logEntry.Exception, logEntry.StackTrace, logEntry.Params);
+                                break;
+
+                            case LogEntry.LogTypes.Error:
+                                handler.Error(logEntry.TimeStamp, logEntry.Message, logEntry.StackTrace, logEntry.Params);
+                                break;
+
+                            case LogEntry.LogTypes.Fatal:
+                                handler.Fatal(logEntry.TimeStamp, logEntry.Message, logEntry.StackTrace, logEntry.Params);
+                                break;
+
+                        }
+                    }
+                    catch (Exception ex) { System.Diagnostics.Debug.Write(ex.ToString()); }
+                }
+            });
         }
 
         public static void Success(string message,params Object[] oparams){

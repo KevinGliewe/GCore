@@ -1,10 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+      <VersionPrefix>1.1.0</VersionPrefix>
+      <VersionSuffix>beta</VersionSuffix>
+  </PropertyGroup>
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.0.5</Version>
-    <AssemblyVersion>1.0.5.0</AssemblyVersion>
-    <FileVersion>1.0.5.0</FileVersion>
     <Authors>Kevin Gliewe</Authors>
     <Company>Kevin Gliewe</Company>
     <Description>Useful C# Stuff for .NET Standard 2.0</Description>
@@ -12,6 +13,18 @@
     <PackageProjectUrl>https://github.com/KillerGoldFisch/GCore</PackageProjectUrl>
     <PackageLicenseUrl>http://anak10thn.github.io/WTFPL/</PackageLicenseUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Extensions\IList\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="ProjectVersioning.DotNet.Cli" Version="3.0.1" />
+  </ItemGroup>
+  
+  <Target Name="GenerateVersionInfo" BeforeTargets="Build">
+      <Exec Command="dotnet project-version -s=git -t=cs -v=$(VersionPrefix) -m=$(VersionSuffix)" />
+  </Target>
 </Project>
