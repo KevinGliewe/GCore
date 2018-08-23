@@ -169,6 +169,5 @@ namespace GCore.Extensions.StringEx {
             process.Start();
             return process;
         }
-
     }
 }
