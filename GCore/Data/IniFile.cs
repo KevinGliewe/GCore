@@ -6,6 +6,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Globalization;
 using System.IO;
 using System.Text;
@@ -32,6 +33,19 @@ namespace GCore.Data {
 
         // *** Local cache ***
         private Dictionary<string, Dictionary<string, string>> m_Sections = new Dictionary<string, Dictionary<string, string>>();
+
+        public ReadOnlyDictionary<string, ReadOnlyDictionary<string, string>> Cache {
+            get {
+                var tmp = new Dictionary<string, ReadOnlyDictionary<string, string>>();
+                
+                lock(m_Lock) {
+                    foreach(var entry in m_Sections)
+                        tmp.Add(entry.Key, new ReadOnlyDictionary<string, string>(entry.Value));
+                }
+
+                return new ReadOnlyDictionary<string, ReadOnlyDictionary<string, string>>(tmp);
+            }
+        }
 
         // *** Local cache modified flag ***
         private bool m_CacheModified = false;
