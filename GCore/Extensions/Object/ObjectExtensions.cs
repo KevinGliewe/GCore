@@ -81,5 +81,11 @@ namespace GCore.Extensions.ObjectEx {
         {
             return GCore.Data.Dump.ToDump(this_, type, name);
         }
+
+        public static string ToStringSafe(this System.Object this_)
+        {
+            if (this_ is null) return "NULL";
+            return this_.ToString();
+        }
     }
 }

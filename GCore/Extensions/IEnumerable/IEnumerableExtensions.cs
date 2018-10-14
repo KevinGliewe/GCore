@@ -202,6 +202,36 @@ namespace GCore.Extensions.IEnumerableEx {
             return ret.ToArray();
         }
 
+        /// Ruft die Func für jedes Element auf und
+        /// gibt die Rückgabewehrte zurück.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="TR"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="callback"></param>
+        /// <returns></returns>
+        public static TR[] ForeachReverse<T, TR>(this IEnumerable<T> source, Func<T, TR> callback)
+        {
+            List<TR> ret = new List<TR>();
+            foreach (var element in source.Reverse())
+                ret.Add(callback((T)element));
+            return ret.ToArray();
+        }
+
+        /// Ruft die Func für jedes Element auf und
+        /// gibt die Rückgabewehrte zurück.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="TR"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="callback"></param>
+        /// <returns></returns>
+        public static void ForeachReverse<T>(this IEnumerable<T> source, Action<T> callback)
+        {
+            foreach (var element in source.Reverse())
+                callback((T)element);
+        }
+
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////////
         ////////////////////////////////////// NON GENERIC ///////////////////////////////////////////////////////
@@ -271,6 +301,19 @@ namespace GCore.Extensions.IEnumerableEx {
         {
             foreach (var element in source)
                 yield return (T)element;
+        }
+
+        /// <summary>
+        /// Returns true if there is at least one item in it.
+        /// </summary>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public static bool Any(this System.Collections.IEnumerable source)
+        {
+            if (source is null) return false;
+            foreach (var i in source)
+                return true;
+            return false;
         }
     }
 }
