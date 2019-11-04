@@ -6,9 +6,24 @@ using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Security.Cryptography;
+using System.CodeDom;
+using System.CodeDom.Compiler;
 
 namespace GCore.Extensions.StringEx {
     public static class StringExtensions {
+        public static string ToLiteral(this string data) {
+            using (var writer = new System.IO.StringWriter()) {
+                using (var provider = CodeDomProvider.CreateProvider("CSharp")) {
+                    provider.GenerateCodeFromExpression(new CodePrimitiveExpression(data), writer, null);
+                    return writer.ToString();
+                }
+            }
+        }
+
+        public static string Escape(this string data) {
+            return data.ToLiteral();
+        }
+
         /// <summary>
         /// Konvertiert den String in einen Byte Array mithilfe der UTF8 Codierung.
         /// </summary>

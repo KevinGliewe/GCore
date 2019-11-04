@@ -23,6 +23,10 @@
   <ItemGroup>
     <DotNetCliToolReference Include="ProjectVersioning.DotNet.Cli" Version="3.0.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.CodeDom" Version="4.6.0" />
+  </ItemGroup>
   
   <Target Name="GenerateVersionInfo" BeforeTargets="Build">
       <Exec Command="dotnet project-version -s=git -t=cs -v=$(VersionPrefix) -m=$(VersionSuffix)" />
