@@ -43,5 +43,7 @@ namespace GCore.Diagnostics {
             DateTime MyTime = new DateTime(2000, 1, 1).AddDays(MyVersion.Build).AddSeconds(MyVersion.Revision * 2);
             return MyTime;
         }
+
+        public static bool IsFullFramework => System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription.StartsWith(".NET Framework");
     }
 }

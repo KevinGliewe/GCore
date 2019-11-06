@@ -82,6 +82,8 @@ namespace GCore.Threading {
         }
 
         public double GetCPUUsageRelative() {
+            if (_processThread is null)
+                return double.NaN;
             Process p = Process.GetCurrentProcess();
             long threadCpuTime = _processThread.TotalProcessorTime.Ticks;
             long processCpuTime = p.TotalProcessorTime.Ticks;
@@ -138,7 +140,7 @@ namespace GCore.Threading {
             async void _timer_Tick() {
                 while (true)
                 {
-                    Task.Delay(200);
+                    await Task.Delay(200);
                     foreach (GThread gThread in GThread.AllGThreads)
                         if (this.CPUUsage.ContainsKey(gThread))
                             this.CPUUsage[gThread] = gThread.GetCPUUsageRelative();
