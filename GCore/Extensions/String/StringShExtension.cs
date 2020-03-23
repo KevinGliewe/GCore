@@ -88,5 +88,15 @@ namespace GCore.Extensions.StringShEx {
             return process.ExitCode;
         }
 
+
+        public static Version ExtractVersion(this string self) {
+            var match = Regex.Match(self, @"^.*(\d+)\.(\d+)\.(\d+).*$");
+            if (match != null)
+                return new Version(
+                    int.Parse(match.Groups[1].Value),
+                    int.Parse(match.Groups[2].Value),
+                    int.Parse(match.Groups[3].Value));
+            throw new Exception($"String '{self}' does not contain a version number");
+        }
     }
 }
