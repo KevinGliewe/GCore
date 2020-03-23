@@ -5,43 +5,88 @@ using System.Text.RegularExpressions;
 
 namespace GCore.Extensions.StringShEx {
     public static class StringShExtensions {
-        public static string Sh(this string cmd)
-        {
+
+        public static string Sh(this string cmd, string workingDirectory = ".") {
             var escapedArgs = cmd.Replace("\"", "\\\"");
 
             var fileName = "/bin/bash";
             var arguments = $"-c \"{escapedArgs}\"";
 
-            if(RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) {
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) {
                 fileName = "cmd.exe";
                 arguments = $"/C \"{escapedArgs}\"";
             }
-            
-            var process = new Process()
-            {
-                StartInfo = new ProcessStartInfo
-                {
+
+            var process = new Process() {
+                StartInfo = new ProcessStartInfo {
                     FileName = fileName,
                     Arguments = arguments,
                     RedirectStandardOutput = true,
                     UseShellExecute = false,
                     CreateNoWindow = true,
+                    WorkingDirectory = workingDirectory
                 }
             };
             process.Start();
-            string result = process.StandardOutput.ReadToEnd();
+            var stdOut = process.StandardOutput.ReadToEnd();
             process.WaitForExit();
-            return result;
+            return stdOut;
         }
 
-        public static Version ExtractVersion(this string self) {
-            var match = Regex.Match(self, @"^.*(\d+)\.(\d+)\.(\d+).*$");
-            if(match != null)
-                return new Version(
-                    int.Parse(match.Groups[1].Value), 
-                    int.Parse(match.Groups[2].Value), 
-                    int.Parse(match.Groups[3].Value));
-            throw new Exception($"String '{self}' does not contain a version number");
+        public static void Sh2(this string cmd, out Process process, string workingDirectory = ".") {
+            var escapedArgs = cmd.Replace("\"", "\\\"");
+
+            var fileName = "/bin/bash";
+            var arguments = $"-c \"{escapedArgs}\"";
+
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) {
+                fileName = "cmd.exe";
+                arguments = $"/C \"{escapedArgs}\"";
+            }
+
+            process = new Process() {
+                StartInfo = new ProcessStartInfo {
+                    FileName = fileName,
+                    Arguments = arguments,
+                    RedirectStandardOutput = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true,
+                    WorkingDirectory = workingDirectory
+                }
+            };
+            process.Start();
         }
+
+
+
+        public static int Sh2(this string cmd, out string stdOut, string workingDirectory = ".") {
+            Process process;
+            cmd.Sh2(out process, workingDirectory);
+            stdOut = process.StandardOutput.ReadToEnd();
+            process.WaitForExit();
+            return process.ExitCode;
+        }
+
+        public static int Sh2(this string cmd, Action<string> lineCallback = null, string workingDirectory = ".") {
+            Process process;
+            cmd.Sh2(out process, workingDirectory);
+            string line;
+            if (lineCallback != null)
+                while ((line = process.StandardOutput.ReadLine()) != null)
+                    lineCallback(line);
+            process.WaitForExit();
+            return process.ExitCode;
+        }
+
+        public static int Sh2(this string cmd, string workingDirectory = ".") {
+            Process process;
+            cmd.Sh2(out process, workingDirectory);
+            string line;
+            while ((line = process.StandardOutput.ReadLine()) != null)
+                GCore.Logging.Log.Info($"Process {process.Id}: {line}");
+            process.WaitForExit();
+            return process.ExitCode;
+        }
+
     }
 }
