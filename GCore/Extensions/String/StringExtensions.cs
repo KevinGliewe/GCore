@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 using System.Security.Cryptography;
 using System.CodeDom;
 using System.CodeDom.Compiler;
+using GCore.Data.Coding;
 
 namespace GCore.Extensions.StringEx {
     public static class StringExtensions {
@@ -173,16 +174,16 @@ namespace GCore.Extensions.StringEx {
             return GCore.Data.Crypto.EncDec.Decrypt(str, (password != null) ? password : GCore.Data.Crypto.EncDec.GeneratePassword());
         }
 
-        public static Process CMD(this string this_)
+        /// <summary>
+        /// Creates a deterministic Guid based on a String and a namespace.
+        /// </summary>
+        /// <param name="self"></param>
+        /// <param name="namespaceId"></param>
+        /// <param name="version"></param>
+        /// <returns></returns>
+        public static Guid GuidCreate(this string self, Guid? namespaceId = null, int version = 5)
         {
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "/C " + this_;
-            process.StartInfo = startInfo;
-            process.Start();
-            return process;
+            return GuidUtility.Create(namespaceId ?? GuidUtility.GCoreNamespace, self, version);
         }
     }
 }

@@ -82,6 +82,7 @@ class Build : NukeBuild
                 .EnableNoBuild()
                 .EnableIncludeSymbols());
         });
+
     Target Publish => _ => _
         .DependsOn(Pack)
         .Requires(() => ApiKey)
