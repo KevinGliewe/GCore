@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 namespace GCore.Extensions.StringShEx {
     public static class StringShExtensions {
 
-        public static string Sh(this string cmd, string workingDirectory = ".") {
+        public static string Sh(this string cmd, string workingDirectory = ".", bool redirectStandardError = true) {
             var escapedArgs = cmd.Replace("\"", "\\\"");
 
             var fileName = "/bin/bash";
@@ -22,6 +22,7 @@ namespace GCore.Extensions.StringShEx {
                     FileName = fileName,
                     Arguments = arguments,
                     RedirectStandardOutput = true,
+                    RedirectStandardError = redirectStandardError,
                     UseShellExecute = false,
                     CreateNoWindow = true,
                     WorkingDirectory = workingDirectory
@@ -33,7 +34,7 @@ namespace GCore.Extensions.StringShEx {
             return stdOut;
         }
 
-        public static void Sh2(this string cmd, out Process process, string workingDirectory = ".") {
+        public static void Sh2(this string cmd, out Process process, string workingDirectory = ".", bool redirectStandardError = true) {
             var escapedArgs = cmd.Replace("\"", "\\\"");
 
             var fileName = "/bin/bash";
@@ -49,6 +50,7 @@ namespace GCore.Extensions.StringShEx {
                     FileName = fileName,
                     Arguments = arguments,
                     RedirectStandardOutput = true,
+                    RedirectStandardError = redirectStandardError,
                     UseShellExecute = false,
                     CreateNoWindow = true,
                     WorkingDirectory = workingDirectory
@@ -59,17 +61,17 @@ namespace GCore.Extensions.StringShEx {
 
 
 
-        public static int Sh2(this string cmd, out string stdOut, string workingDirectory = ".") {
+        public static int Sh2(this string cmd, out string stdOut, string workingDirectory = ".", bool redirectStandardError = true) {
             Process process;
-            cmd.Sh2(out process, workingDirectory);
+            cmd.Sh2(out process, workingDirectory, redirectStandardError);
             stdOut = process.StandardOutput.ReadToEnd();
             process.WaitForExit();
             return process.ExitCode;
         }
 
-        public static int Sh2(this string cmd, Action<string> lineCallback = null, string workingDirectory = ".") {
+        public static int Sh2(this string cmd, Action<string> lineCallback = null, string workingDirectory = ".", bool redirectStandardError = true) {
             Process process;
-            cmd.Sh2(out process, workingDirectory);
+            cmd.Sh2(out process, workingDirectory, redirectStandardError);
             string line;
             if (lineCallback != null)
                 while ((line = process.StandardOutput.ReadLine()) != null)
@@ -78,9 +80,9 @@ namespace GCore.Extensions.StringShEx {
             return process.ExitCode;
         }
 
-        public static int Sh2(this string cmd, string workingDirectory = ".") {
+        public static int Sh2(this string cmd, string workingDirectory = ".", bool redirectStandardError = true) {
             Process process;
-            cmd.Sh2(out process, workingDirectory);
+            cmd.Sh2(out process, workingDirectory, redirectStandardError);
             string line;
             while ((line = process.StandardOutput.ReadLine()) != null)
                 GCore.Logging.Log.Info($"Process {process.Id}: {line}");
