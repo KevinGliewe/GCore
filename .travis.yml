@@ -2,9 +2,11 @@ language: csharp
 mono: latest
 git:
   depth: false
+before_install:
+  - sudo apt-get -y install zlib libcurl
 install:
-  - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -Version '2.1.20'
-  - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -Version '3.1.6'
+  - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -Version '2.1.2'
+  - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -Version '3.1.301'
 script:
   - chmod +x ./build.sh 
   - ./build.sh Publish -ApiKey $NUGET_API_KEY
