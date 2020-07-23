@@ -1,13 +1,8 @@
 language: csharp
+dotnet: 2.1
 mono: none
 git:
   depth: false
-before_install:
-  - sudo apt-get update
-  - sudo apt-get -y install gzip curl
-install:
-  - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -Version '2.1.2'
-  - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -Version '3.1.301'
 script:
   - chmod +x ./build.sh 
   - ./build.sh Publish -ApiKey $NUGET_API_KEY
