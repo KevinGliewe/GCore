@@ -1,8 +1,9 @@
 language: csharp
-mono: latest
+mono: none
 git:
   depth: false
 before_install:
+  - sudo apt-get update
   - sudo apt-get -y install zlib libcurl
 install:
   - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -Version '2.1.2'
