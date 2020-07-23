@@ -4,7 +4,7 @@ git:
   depth: false
 before_install:
   - sudo apt-get update
-  - sudo apt-get -y install zlib libcurl
+  - sudo apt-get -y install gzip curl
 install:
   - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -Version '2.1.2'
   - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -Version '3.1.301'
