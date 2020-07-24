@@ -1,6 +1,6 @@
 language: csharp
 dotnet: 2.1
-mono: latest
+mono: none
 git:
   depth: false
 script:
