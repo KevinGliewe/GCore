@@ -232,6 +232,80 @@ namespace GCore.Extensions.IEnumerableEx {
                 callback((T)element);
         }
 
+        // https://stackoverflow.com/a/10629938/1251423
+
+        /// <summary>
+        /// new int[] { 1, 2, 3, 4 }.GetPermutationsWithRept(2)
+        /// => {1,1} {1,2} {1,3} {1,4} {2,1} {2,2} {2,3} {2,4} {3,1} {3,2} {3,3} {3,4} {4,1} {4,2} {4,3} {4,4}
+        /// https://stackoverflow.com/a/10629938/1251423
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        public static IEnumerable<IEnumerable<T>>
+            GetPermutationsWithRept<T>(this IEnumerable<T> list, int length = 0) {
+            if (length == 0) length = list.Count();
+            if (length == 1) return list.Select(t => new T[] { t });
+            return GetPermutationsWithRept(list, length - 1)
+                .SelectMany(t => list,
+                    (t1, t2) => t1.Concat(new T[] { t2 }));
+        }
+
+        /// <summary>
+        /// new int[] { 1, 2, 3, 4 }.GetPermutations(2)
+        /// => {1,2} {1,3} {1,4} {2,1} {2,3} {2,4} {3,1} {3,2} {3,4} {4,1} {4,2} {4,3}
+        /// https://stackoverflow.com/a/10629938/1251423
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        public static IEnumerable<IEnumerable<T>>
+            GetPermutations<T>(this IEnumerable<T> list, int length = 0) {
+            if (length == 0) length = list.Count();
+            if (length == 1) return list.Select(t => new T[] { t });
+            return GetPermutations(list, length - 1)
+                .SelectMany(t => list.Where(o => !t.Contains(o)),
+                    (t1, t2) => t1.Concat(new T[] { t2 }));
+        }
+
+        /// <summary>
+        /// new int[] { 1, 2, 3, 4 }.GetKCombsWithRept(2)
+        /// => {1,1} {1,2} {1,3} {1,4} {2,2} {2,3} {2,4} {3,3} {3,4} {4,4}
+        /// https://stackoverflow.com/a/10629938/1251423
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        public static IEnumerable<IEnumerable<T>>
+            GetKCombsWithRept<T>(this IEnumerable<T> list, int length = 0) where T : IComparable {
+            if (length == 0) length = list.Count();
+            if (length == 1) return list.Select(t => new T[] { t });
+            return GetKCombsWithRept(list, length - 1)
+                .SelectMany(t => list.Where(o => o.CompareTo(t.Last()) >= 0),
+                    (t1, t2) => t1.Concat(new T[] { t2 }));
+        }
+
+        /// <summary>
+        /// new int[] { 1, 2, 3, 4 }.GetKCombs(2)
+        /// {1,2} {1,3} {1,4} {2,3} {2,4} {3,4}
+        /// https://stackoverflow.com/a/10629938/1251423
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        public static IEnumerable<IEnumerable<T>>
+            GetKCombs<T>(this IEnumerable<T> list, int length = 0) where T : IComparable {
+            if (length == 0) length = list.Count();
+            if (length == 1) return list.Select(t => new T[] { t });
+            return GetKCombs(list, length - 1)
+                .SelectMany(t => list.Where(o => o.CompareTo(t.Last()) > 0),
+                    (t1, t2) => t1.Concat(new T[] { t2 }));
+        }
+
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////////
         ////////////////////////////////////// NON GENERIC ///////////////////////////////////////////////////////
@@ -315,5 +389,6 @@ namespace GCore.Extensions.IEnumerableEx {
                 return true;
             return false;
         }
+
     }
 }

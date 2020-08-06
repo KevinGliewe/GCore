@@ -27,24 +27,28 @@ namespace GCore.Networking.Socket {
         public delegate void ClientArrivedHandler(GSocketListener sender, GSocket Client);
         public event ClientArrivedHandler ClientArrived;
 
-        public GSocketListener(IPAddress address, int port, GSocketListener.ClientArrivedHandler handler) {
+        public GSocketListener(IPAddress address, int port, GSocketListener.ClientArrivedHandler handler, bool setReuseAddress = true) {
             _port = port;
 
             ClientArrived += handler;
 
             _tcpListener = new TcpListener(address, _port);
+            if(setReuseAddress)
+                _tcpListener.Server.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, 1);
             _tcpListener.Start();
 
             _acceptorThread = new GThread(new ThreadStart(_acceptorloop), "Acceptor Loop", true);
             _acceptorThread.Start();
         }
 
-        public GSocketListener(int port, GSocketListener.ClientArrivedHandler handler) {
+        public GSocketListener(int port, GSocketListener.ClientArrivedHandler handler, bool setReuseAddress = true) {
             _port = port;
 
             ClientArrived += handler;
 
             _tcpListener = new TcpListener(_port);
+            if (setReuseAddress)
+                _tcpListener.Server.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, 1);
             _tcpListener.Start();
 
             _acceptorThread = new GThread(new ThreadStart(_acceptorloop), "Acceptor Loop", true);
