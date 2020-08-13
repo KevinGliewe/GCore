@@ -53,7 +53,7 @@ namespace GCore.Extensions.TypeEx {
         /// </summary>
         /// <param name="type"></param>
         /// <returns></returns>
-        public static System.Array CreateGenericArrayInstance(this System.Type type, uint size) {
+        public static System.Array CreateGenericArrayInstance(this System.Type type, int size) {
             return (System.Array)Activator.CreateInstance(type.MakeArrayType(), size);
 
         }
