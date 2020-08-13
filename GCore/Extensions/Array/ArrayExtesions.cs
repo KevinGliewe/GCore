@@ -81,5 +81,10 @@ namespace GCore.Extensions.ArrayEx {
                 return source[index];
             return source[source.Length + index];
         }
+
+        public static Object[] ToObjectArray(this System.Array array)
+        {
+            return array.Cast<Object>().ToArray();
+        }
     }
 }

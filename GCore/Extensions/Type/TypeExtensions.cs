@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,6 +33,29 @@ namespace GCore.Extensions.TypeEx {
             }
 
             return true;
+        }
+
+        /// <summary>
+        /// Creates a Generic List of type
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public static IList CreateGenericListInstance(this System.Type type)
+        {
+            var listType = typeof(List<>);
+            var constructedListType = listType.MakeGenericType(type);
+            var instance = Activator.CreateInstance(constructedListType);
+            return (IList)instance;
+        }
+
+        /// <summary>
+        /// Creates a Generic List of type
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public static System.Array CreateGenericArrayInstance(this System.Type type, uint size) {
+            return (System.Array)Activator.CreateInstance(type.MakeArrayType(), size);
+
         }
 
         /// <summary>
