@@ -2,6 +2,7 @@
   <PropertyGroup>
       <VersionPrefix>1.1.1</VersionPrefix>
       <VersionSuffix>beta</VersionSuffix>
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -14,10 +15,6 @@
     <PackageLicenseUrl>http://anak10thn.github.io/WTFPL/</PackageLicenseUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
