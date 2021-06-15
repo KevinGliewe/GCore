@@ -1,0 +1,30 @@
+{
+    "name": "Default Codespaces",
+    "extensions": [
+        "tintoy.msbuild-project-tools",
+        "cschleiden.vscode-github-actions",
+        "donjayamanne.githistory",
+        "eamodio.gitlens",
+        "editorconfig.editorconfig",
+        "github.vscode-pull-request-github",
+        "k--kato.docomment",
+        "kreativ-software.csharpextensions",
+        "mhutchie.git-graph",
+        "ms-azuretools.vscode-azurefunctions",
+        "ms-azuretools.vscode-docker",
+        "ms-dotnettools.csharp",
+        "ms-vscode.powershell",
+        "ms-vsliveshare.vsliveshare",
+        "visualstudioexptteam.vscodeintellicode",
+        "yzhang.markdown-all-in-one"
+    ],
+    "dockerFile": "Dockerfile",
+    "forwardPorts": [],
+    "settings": {
+        "terminal.integrated.shell.linux": "/usr/bin/zsh",
+        "files.exclude": {
+            "**/CODE_OF_CONDUCT.md": true,
+            "**/LICENSE": true
+        }
+    }
+  }

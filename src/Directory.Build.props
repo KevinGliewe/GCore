@@ -1,0 +1,52 @@
+<Project>
+
+  <Import Project="..\Version.props" />
+
+  <PropertyGroup>
+    <Company>Gliewe.NET</Company>
+    <Copyright>Copyright (C) Kevin Gliewe</Copyright>
+    <LangVersion>latest</LangVersion>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
+    <Authors>$(Company)</Authors>
+    <Description>Useful C# Stuff for .NET Standard 2.0</Description>
+    <PackageTags></PackageTags>
+    <PackageProjectUrl>https://kevingliewe.github.io/GCore/</PackageProjectUrl>
+    <PublishRepositoryUrl>https://github.com/KevinGliewe/GCore</PublishRepositoryUrl>
+    <PackageReleaseNotes>https://github.com/KevinGliewe/GCore/blob/master/Changelog.md</PackageReleaseNotes>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../doc/icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <!-- Suppress default attributes created by the compiler to prevent duplicate attribute errors -->
+  <PropertyGroup>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+  </PropertyGroup>
+
+  <Target Name="GenerateVersionInfo" BeforeTargets="CoreCompile">
+    <Exec Command="dotnet tool restore" />
+    <Exec Command="dotnet tool run rw-project-version -s=git -t=cs -v=$(VersionPrefix) -m=$(VersionSuffix)" />
+    <ItemGroup>
+      <Compile Remove="Properties\VersionInfo.cs" />
+      <Compile Include="Properties\VersionInfo.cs" />
+    </ItemGroup>
+  </Target>
+
+</Project>

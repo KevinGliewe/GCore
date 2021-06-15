@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\Lib.Build.props" />
+
+  <PropertyGroup>
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\IList\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="ProjectVersioning.DotNet.Cli" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.CodeDom" Version="4.6.0" />
+  </ItemGroup>
+</Project>
