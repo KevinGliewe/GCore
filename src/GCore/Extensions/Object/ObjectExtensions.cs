@@ -7,6 +7,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 using GCore.Extensions.ArrayEx;
+using System.Data;
 
 namespace GCore.Extensions.ObjectEx {
     public static class ObjectExtensions {
@@ -86,6 +87,20 @@ namespace GCore.Extensions.ObjectEx {
         {
             if (this_ is null) return "NULL";
             return this_.ToString();
+        }
+
+        public static DataTable ToDataTableO(this System.Object this_)
+        {
+            var dt = new DataTable();
+            dt.Columns.Add("Name", typeof(string));
+            dt.Columns.Add("Value", typeof(object));
+
+            foreach (var p in this_.GetType().GetProperties())
+            {
+                dt.Rows.Add(p.Name, p.GetValue(this_));
+            }
+
+            return dt;
         }
     }
 }

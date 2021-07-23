@@ -1,5 +1,7 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
@@ -305,6 +307,27 @@ namespace GCore.Extensions.IEnumerableEx {
                 .SelectMany(t => list.Where(o => o.CompareTo(t.Last()) > 0),
                     (t1, t2) => t1.Concat(new T[] { t2 }));
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="self"></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        public static DataTable ToDataTable<T>(this IEnumerable<T> self)
+        {
+            var properties = typeof(T).GetProperties();
+
+            var dataTable = new DataTable();
+            foreach (var info in properties)
+                dataTable.Columns.Add(info.Name, Nullable.GetUnderlyingType(info.PropertyType) 
+                    ?? info.PropertyType);
+
+            foreach (var entity in self)
+                dataTable.Rows.Add(properties.Select(p => p.GetValue(entity)).ToArray());
+
+            return dataTable;
+        }    
 
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////////
