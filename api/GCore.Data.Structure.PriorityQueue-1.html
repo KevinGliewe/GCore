@@ -1,0 +1,883 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PriorityQueue&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PriorityQueue&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.Data.Structure.PriorityQueue`1">
+  
+  
+  <h1 id="GCore_Data_Structure_PriorityQueue_1" data-uid="GCore.Data.Structure.PriorityQueue`1" class="text-break">Class PriorityQueue&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PriorityQueue&lt;T&gt;</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Data.Structure.html">GCore.Data.Structure</a></h6>
+  <h6><strong>Assembly</strong>: GCore.dll</h6>
+  <h5 id="GCore_Data_Structure_PriorityQueue_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PriorityQueue&lt;T&gt; : object where T : IComparable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_LstHeap.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.LstHeap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L7">View Source</a>
+  </span>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_LstHeap" data-uid="GCore.Data.Structure.PriorityQueue`1.LstHeap">LstHeap</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;T&gt; LstHeap</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_Count.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L9">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_Count_" data-uid="GCore.Data.Structure.PriorityQueue`1.Count*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_Count" data-uid="GCore.Data.Structure.PriorityQueue`1.Count">Count</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_Add__0_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.Add(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L13">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_Add_" data-uid="GCore.Data.Structure.PriorityQueue`1.Add*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_Add__0_" data-uid="GCore.Data.Structure.PriorityQueue`1.Add(`0)">Add(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Add(T val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_ArrayVal_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.ArrayVal(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L64">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_ArrayVal_" data-uid="GCore.Data.Structure.PriorityQueue`1.ArrayVal*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_ArrayVal_System_Int32_" data-uid="GCore.Data.Structure.PriorityQueue`1.ArrayVal(System.Int32)">ArrayVal(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T ArrayVal(int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_DownHeap_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.DownHeap(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L93">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_DownHeap_" data-uid="GCore.Data.Structure.PriorityQueue`1.DownHeap*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_DownHeap_System_Int32_" data-uid="GCore.Data.Structure.PriorityQueue`1.DownHeap(System.Int32)">DownHeap(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DownHeap(int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_Left_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.Left(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L72">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_Left_" data-uid="GCore.Data.Structure.PriorityQueue`1.Left*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_Left_System_Int32_" data-uid="GCore.Data.Structure.PriorityQueue`1.Left(System.Int32)">Left(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T Left(int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_LeftChildIndex_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.LeftChildIndex(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L56">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_LeftChildIndex_" data-uid="GCore.Data.Structure.PriorityQueue`1.LeftChildIndex*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_LeftChildIndex_System_Int32_" data-uid="GCore.Data.Structure.PriorityQueue`1.LeftChildIndex(System.Int32)">LeftChildIndex(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int LeftChildIndex(int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_LeftSonExists_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.LeftSonExists(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L48">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_LeftSonExists_" data-uid="GCore.Data.Structure.PriorityQueue`1.LeftSonExists*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_LeftSonExists_System_Int32_" data-uid="GCore.Data.Structure.PriorityQueue`1.LeftSonExists(System.Int32)">LeftSonExists(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool LeftSonExists(int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_Parent_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.Parent(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L68">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_Parent_" data-uid="GCore.Data.Structure.PriorityQueue`1.Parent*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_Parent_System_Int32_" data-uid="GCore.Data.Structure.PriorityQueue`1.Parent(System.Int32)">Parent(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T Parent(int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_ParentIndex_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.ParentIndex(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L52">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_ParentIndex_" data-uid="GCore.Data.Structure.PriorityQueue`1.ParentIndex*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_ParentIndex_System_Int32_" data-uid="GCore.Data.Structure.PriorityQueue`1.ParentIndex(System.Int32)">ParentIndex(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ParentIndex(int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_Peek.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.Peek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L19">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_Peek_" data-uid="GCore.Data.Structure.PriorityQueue`1.Peek*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_Peek" data-uid="GCore.Data.Structure.PriorityQueue`1.Peek">Peek()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual T Peek()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_Pop.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.Pop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L27">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_Pop_" data-uid="GCore.Data.Structure.PriorityQueue`1.Pop*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_Pop" data-uid="GCore.Data.Structure.PriorityQueue`1.Pop">Pop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual T Pop()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_Right_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.Right(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L76">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_Right_" data-uid="GCore.Data.Structure.PriorityQueue`1.Right*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_Right_System_Int32_" data-uid="GCore.Data.Structure.PriorityQueue`1.Right(System.Int32)">Right(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T Right(int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_RightChildIndex_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.RightChildIndex(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L60">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_RightChildIndex_" data-uid="GCore.Data.Structure.PriorityQueue`1.RightChildIndex*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_RightChildIndex_System_Int32_" data-uid="GCore.Data.Structure.PriorityQueue`1.RightChildIndex(System.Int32)">RightChildIndex(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int RightChildIndex(int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_RightSonExists_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.RightSonExists(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L44">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_RightSonExists_" data-uid="GCore.Data.Structure.PriorityQueue`1.RightSonExists*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_RightSonExists_System_Int32_" data-uid="GCore.Data.Structure.PriorityQueue`1.RightSonExists(System.Int32)">RightSonExists(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool RightSonExists(int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_SetAt_System_Int32__0_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.SetAt(System.Int32%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L40">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_SetAt_" data-uid="GCore.Data.Structure.PriorityQueue`1.SetAt*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_SetAt_System_Int32__0_" data-uid="GCore.Data.Structure.PriorityQueue`1.SetAt(System.Int32,`0)">SetAt(Int32, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetAt(int i, T val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_Swap_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.Swap(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L80">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_Swap_" data-uid="GCore.Data.Structure.PriorityQueue`1.Swap*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_Swap_System_Int32_System_Int32_" data-uid="GCore.Data.Structure.PriorityQueue`1.Swap(System.Int32,System.Int32)">Swap(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Swap(int i, int j)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">j</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1_UpHeap_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601.UpHeap(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L86">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_PriorityQueue_1_UpHeap_" data-uid="GCore.Data.Structure.PriorityQueue`1.UpHeap*"></a>
+  <h4 id="GCore_Data_Structure_PriorityQueue_1_UpHeap_System_Int32_" data-uid="GCore.Data.Structure.PriorityQueue`1.UpHeap(System.Int32)">UpHeap(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpHeap(int i)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GCore.Extensions.Class.ClassExtensions.html#GCore_Extensions_Class_ClassExtensions_ThrowIfArgumentIsNull__1___0_System_String_">ClassExtensions.ThrowIfArgumentIsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.EnumEx.EnumExtensions.html#GCore_Extensions_EnumEx_EnumExtensions_Flag__1___0___0_">EnumExtensions.Flag&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_Serialize__1___0_GCore_Extensions_SerializingEx_SerializingExtensions_Serializer_">SerializingExtensions.Serialize&lt;T&gt;(T, SerializingExtensions.Serializer)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeBinary__1___0_">SerializingExtensions.SerializeBinary&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeSoap__1___0_">SerializingExtensions.SerializeSoap&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeXML__1___0_System_Boolean_">SerializingExtensions.SerializeXML&lt;T&gt;(T, Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_PriorityQueue_1.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.PriorityQueue%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/PriorityQueue.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

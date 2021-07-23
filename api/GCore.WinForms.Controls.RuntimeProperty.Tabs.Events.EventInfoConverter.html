@@ -1,0 +1,957 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EventInfoConverter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EventInfoConverter
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter">
+  
+  
+  <h1 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter" class="text-break">Class EventInfoConverter
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.ComponentModel.TypeConverter</span></div>
+    <div class="level2"><span class="xref">EventInfoConverter</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.CanConvertFrom(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.CanConvertTo(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.ConvertFrom(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.ConvertFromInvariantString(System.ComponentModel.ITypeDescriptorContext, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.ConvertFromInvariantString(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.ConvertFromString(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.ConvertFromString(System.ComponentModel.ITypeDescriptorContext, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.ConvertFromString(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.ConvertTo(System.Object, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.ConvertToInvariantString(System.ComponentModel.ITypeDescriptorContext, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.ConvertToInvariantString(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.ConvertToString(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.ConvertToString(System.ComponentModel.ITypeDescriptorContext, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.ConvertToString(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.CreateInstance(System.Collections.IDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext, System.Collections.IDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.GetConvertFromException(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.GetConvertToException(System.Object, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.GetCreateInstanceSupported()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.GetCreateInstanceSupported(System.ComponentModel.ITypeDescriptorContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.GetProperties(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.GetPropertiesSupported()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.GetStandardValues()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.GetStandardValuesExclusive()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.GetStandardValuesSupported()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.IsValid(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.TypeConverter.SortProperties(System.ComponentModel.PropertyDescriptorCollection, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.html">GCore.WinForms.Controls.RuntimeProperty.Tabs.Events</a></h6>
+  <h6><strong>Assembly</strong>: GCore.WinForms.dll</h6>
+  <h5 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EventInfoConverter : TypeConverter</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter__ctor_GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventPropertyDescriptor_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.%23ctor(GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventPropertyDescriptor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L38">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter__ctor_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.#ctor*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter__ctor_GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventPropertyDescriptor_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.#ctor(GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventPropertyDescriptor)">EventInfoConverter(EventPropertyDescriptor)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EventInfoConverter(EventPropertyDescriptor eventDescriptor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventPropertyDescriptor.html">EventPropertyDescriptor</a></td>
+        <td><span class="parametername">eventDescriptor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_EventListeners.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.EventListeners%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L271">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_EventListeners_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.EventListeners*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_EventListeners" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.EventListeners">EventListeners</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArrayList EventListeners { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ArrayList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_CanConvertFrom_System_ComponentModel_ITypeDescriptorContext_System_Type_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L45">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_CanConvertFrom_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.CanConvertFrom*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_CanConvertFrom_System_ComponentModel_ITypeDescriptorContext_System_Type_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">CanConvertFrom(ITypeDescriptorContext, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.ITypeDescriptorContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">sourceType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ComponentModel.TypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext, System.Type)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_CanConvertTo_System_ComponentModel_ITypeDescriptorContext_System_Type_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L50">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_CanConvertTo_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.CanConvertTo*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_CanConvertTo_System_ComponentModel_ITypeDescriptorContext_System_Type_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">CanConvertTo(ITypeDescriptorContext, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.ITypeDescriptorContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">destinationType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ComponentModel.TypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext, System.Type)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_ConvertFrom_System_ComponentModel_ITypeDescriptorContext_System_Globalization_CultureInfo_System_Object_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L55">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_ConvertFrom_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.ConvertFrom*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_ConvertFrom_System_ComponentModel_ITypeDescriptorContext_System_Globalization_CultureInfo_System_Object_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">ConvertFrom(ITypeDescriptorContext, CultureInfo, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.ITypeDescriptorContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_ConvertTo_System_ComponentModel_ITypeDescriptorContext_System_Globalization_CultureInfo_System_Object_System_Type_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L67">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_ConvertTo_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.ConvertTo*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_ConvertTo_System_ComponentModel_ITypeDescriptorContext_System_Globalization_CultureInfo_System_Object_System_Type_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">ConvertTo(ITypeDescriptorContext, CultureInfo, Object, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.ITypeDescriptorContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">culture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">destinationType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ComponentModel.TypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext, System.Globalization.CultureInfo, System.Object, System.Type)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetHead.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetHead%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L238">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetHead_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetHead*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetHead" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetHead">GetHead()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetHead()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetListEntry_System_Object_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetListEntry(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L253">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetListEntry_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetListEntry*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetListEntry_System_Object_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetListEntry(System.Object)">GetListEntry(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetListEntry(object entry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">entry</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetProperties.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L106">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetProperties_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetProperties*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetProperties" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetProperties">GetProperties()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PropertyDescriptorCollection GetProperties()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.PropertyDescriptorCollection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetProperties_System_ComponentModel_ITypeDescriptorContext_System_Object_System_Attribute___.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext%2CSystem.Object%2CSystem.Attribute%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L101">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetProperties_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetProperties*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetProperties_System_ComponentModel_ITypeDescriptorContext_System_Object_System_Attribute___" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])">GetProperties(ITypeDescriptorContext, Object, Attribute[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override PropertyDescriptorCollection GetProperties(ITypeDescriptorContext context, object value, Attribute[] attributes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.ITypeDescriptorContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Attribute</span>[]</td>
+        <td><span class="parametername">attributes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.PropertyDescriptorCollection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ComponentModel.TypeConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext, System.Object, System.Attribute[])</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetPropertiesSupported_System_ComponentModel_ITypeDescriptorContext_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L96">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetPropertiesSupported_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetPropertiesSupported*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetPropertiesSupported_System_ComponentModel_ITypeDescriptorContext_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)">GetPropertiesSupported(ITypeDescriptorContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool GetPropertiesSupported(ITypeDescriptorContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.ITypeDescriptorContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ComponentModel.TypeConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetStandardValues_System_ComponentModel_ITypeDescriptorContext_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L91">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetStandardValues_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetStandardValues*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetStandardValues_System_ComponentModel_ITypeDescriptorContext_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)">GetStandardValues(ITypeDescriptorContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TypeConverter.StandardValuesCollection GetStandardValues(ITypeDescriptorContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.ITypeDescriptorContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.TypeConverter.StandardValuesCollection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ComponentModel.TypeConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetStandardValuesSupported_System_ComponentModel_ITypeDescriptorContext_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L86">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetStandardValuesSupported_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetStandardValuesSupported*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_GetStandardValuesSupported_System_ComponentModel_ITypeDescriptorContext_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)">GetStandardValuesSupported(ITypeDescriptorContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool GetStandardValuesSupported(ITypeDescriptorContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.ITypeDescriptorContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ComponentModel.TypeConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_IsValid_System_ComponentModel_ITypeDescriptorContext_System_Object_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.IsValid(System.ComponentModel.ITypeDescriptorContext%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L81">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_IsValid_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.IsValid*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_IsValid_System_ComponentModel_ITypeDescriptorContext_System_Object_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.IsValid(System.ComponentModel.ITypeDescriptorContext,System.Object)">IsValid(ITypeDescriptorContext, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsValid(ITypeDescriptorContext context, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.ITypeDescriptorContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ComponentModel.TypeConverter.IsValid(System.ComponentModel.ITypeDescriptorContext, System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_ToString.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L276">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_ToString_" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.ToString*"></a>
+  <h4 id="GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter_ToString" data-uid="GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GCore.Extensions.Class.ClassExtensions.html#GCore_Extensions_Class_ClassExtensions_ThrowIfArgumentIsNull__1___0_System_String_">ClassExtensions.ThrowIfArgumentIsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.EnumEx.EnumExtensions.html#GCore_Extensions_EnumEx_EnumExtensions_Flag__1___0___0_">EnumExtensions.Flag&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_Serialize__1___0_GCore_Extensions_SerializingEx_SerializingExtensions_Serializer_">SerializingExtensions.Serialize&lt;T&gt;(T, SerializingExtensions.Serializer)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeBinary__1___0_">SerializingExtensions.SerializeBinary&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeSoap__1___0_">SerializingExtensions.SerializeSoap&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeXML__1___0_System_Boolean_">SerializingExtensions.SerializeXML&lt;T&gt;(T, Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_RuntimeProperty_Tabs_Events_EventInfoConverter.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.RuntimeProperty.Tabs.Events.EventInfoConverter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/RuntimeProperty/Tabs/Events/EventInfoConverter.cs/#L28" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

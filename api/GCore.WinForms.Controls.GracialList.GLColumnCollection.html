@@ -1,0 +1,985 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GLColumnCollection
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GLColumnCollection
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection">
+  
+  
+  <h1 id="GCore_WinForms_Controls_GracialList_GLColumnCollection" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection" class="text-break">Class GLColumnCollection
+  </h1>
+  <div class="markdown level0 summary"><p>gl column collection</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Collections.CollectionBase</span></div>
+    <div class="level2"><span class="xref">GLColumnCollection</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.IList</span></div>
+    <div><span class="xref">System.Collections.ICollection</span></div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.System.Collections.IList.get_Item(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.System.Collections.IList.set_Item(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.OnClear()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.OnClearComplete()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.OnInsert(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.OnInsertComplete(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.OnRemove(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.OnRemoveComplete(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.OnSet(System.Int32, System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.OnSetComplete(System.Int32, System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.OnValidate(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.RemoveAt(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.System.Collections.ICollection.CopyTo(System.Array, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.System.Collections.IList.Add(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.System.Collections.IList.Contains(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.System.Collections.IList.IndexOf(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.System.Collections.IList.Insert(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.System.Collections.IList.Remove(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.Capacity</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.Count</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.InnerList</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.List</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.System.Collections.ICollection.IsSynchronized</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.System.Collections.ICollection.SyncRoot</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.System.Collections.IList.IsFixedSize</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.System.Collections.IList.IsReadOnly</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.CollectionBase.System.Collections.IList.Item[System.Int32]</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.WinForms.Controls.GracialList.html">GCore.WinForms.Controls.GracialList</a></h6>
+  <h6><strong>Assembly</strong>: GCore.WinForms.dll</h6>
+  <h5 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GLColumnCollection : CollectionBase, IList, ICollection, IEnumerable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection__ctor_GCore_WinForms_Controls_GracialList_GlacialList_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.%23ctor(GCore.WinForms.Controls.GracialList.GlacialList)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L429">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection__ctor_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.#ctor*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection__ctor_GCore_WinForms_Controls_GracialList_GlacialList_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.#ctor(GCore.WinForms.Controls.GracialList.GlacialList)">GLColumnCollection(GlacialList)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GLColumnCollection(GlacialList parent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.GracialList.GlacialList.html">GlacialList</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_Item_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L480">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Item_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Item*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Item_System_Int32_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Indexer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GLColumn this[int nColumnIndex] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nColumnIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.GracialList.GLColumn.html">GLColumn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_Item_System_String_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.Item(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L492">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Item_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Item*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Item_System_String_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Item(System.String)">Item[String]</h4>
+  <div class="markdown level1 summary"><p>Index by column name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GLColumn this[string strColumnName] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">strColumnName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.GracialList.GLColumn.html">GLColumn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_Parent.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.Parent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L466">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Parent_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Parent*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Parent" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Parent">Parent</h4>
+  <div class="markdown level1 summary"><p>pointer to parent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Browsable(false)]
+public GlacialList Parent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.GracialList.GlacialList.html">GlacialList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_Width.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.Width%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L523">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Width_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Width*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Width" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Width">Width</h4>
+  <div class="markdown level1 summary"><p>the combined width of all of the columns</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Width { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_Add_GCore_WinForms_Controls_GracialList_GLColumn_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.Add(GCore.WinForms.Controls.GracialList.GLColumn)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L568">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Add_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Add*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Add_GCore_WinForms_Controls_GracialList_GLColumn_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Add(GCore.WinForms.Controls.GracialList.GLColumn)">Add(GLColumn)</h4>
+  <div class="markdown level1 summary"><p>Add a column to collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(GLColumn newColumn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.GracialList.GLColumn.html">GLColumn</a></td>
+        <td><span class="parametername">newColumn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_Add_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.Add(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L589">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Add_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Add*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Add_System_String_System_Int32_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Add(System.String,System.Int32)">Add(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Add Column to collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GLColumn Add(string strColumnName, int nColumnWidth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">strColumnName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nColumnWidth</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.GracialList.GLColumn.html">GLColumn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_Add_System_String_System_Int32_System_Windows_Forms_HorizontalAlignment_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.Add(System.String%2CSystem.Int32%2CSystem.Windows.Forms.HorizontalAlignment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L610">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Add_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Add*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Add_System_String_System_Int32_System_Windows_Forms_HorizontalAlignment_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Add(System.String,System.Int32,System.Windows.Forms.HorizontalAlignment)">Add(String, Int32, HorizontalAlignment)</h4>
+  <div class="markdown level1 summary"><p>Add Column to collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GLColumn Add(string strColumnName, int nColumnWidth, HorizontalAlignment align)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">strColumnName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nColumnWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Windows.Forms.HorizontalAlignment</span></td>
+        <td><span class="parametername">align</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.GracialList.GLColumn.html">GLColumn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_AddRange_GCore_WinForms_Controls_GracialList_GLColumn___.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.AddRange(GCore.WinForms.Controls.GracialList.GLColumn%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L628">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_AddRange_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.AddRange*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_AddRange_GCore_WinForms_Controls_GracialList_GLColumn___" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.AddRange(GCore.WinForms.Controls.GracialList.GLColumn[])">AddRange(GLColumn[])</h4>
+  <div class="markdown level1 summary"><p>Add Range of columns to collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRange(GLColumn[] columns)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.GracialList.GLColumn.html">GLColumn</a>[]</td>
+        <td><span class="parametername">columns</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_AnyPressed.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.AnyPressed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L701">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_AnyPressed_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.AnyPressed*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_AnyPressed" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.AnyPressed">AnyPressed()</h4>
+  <div class="markdown level1 summary"><p>if any of the columns are in a pressed state then disable all hotting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AnyPressed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_Clear.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L655">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Clear_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Clear*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Clear" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Remove all columns from collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_ClearHotStates.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.ClearHotStates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L688">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_ClearHotStates_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.ClearHotStates*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_ClearHotStates" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.ClearHotStates">ClearHotStates()</h4>
+  <div class="markdown level1 summary"><p>Clear only hot states from column collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearHotStates()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_ClearStates.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.ClearStates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L679">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_ClearStates_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.ClearStates*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_ClearStates" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.ClearStates">ClearStates()</h4>
+  <div class="markdown level1 summary"><p>Clear column states</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearStates()</code></pre>
+  </div>
+  <h5 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_ClearStates_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Primarily used to clear pressed / hot states</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_GetColumnIndex_System_String_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.GetColumnIndex(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L506">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_GetColumnIndex_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.GetColumnIndex*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_GetColumnIndex_System_String_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.GetColumnIndex(System.String)">GetColumnIndex(String)</h4>
+  <div class="markdown level1 summary"><p>Get the column index that corresponds to the column name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetColumnIndex(string strColumnName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">strColumnName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_GetSpanSize_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.GetSpanSize(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L548">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_GetSpanSize_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.GetSpanSize*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_GetSpanSize_System_String_System_Int32_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.GetSpanSize(System.String,System.Int32)">GetSpanSize(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get Span Size for column spanning</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSpanSize(string strStartColumnName, int nColumnsSpanned)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">strStartColumnName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nColumnsSpanned</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_GLColumn_Changed_System_Object_GCore_WinForms_Controls_GracialList_ChangedEventArgs_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.GLColumn_Changed(System.Object%2CGCore.WinForms.Controls.GracialList.ChangedEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L450">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_GLColumn_Changed_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.GLColumn_Changed*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_GLColumn_Changed_System_Object_GCore_WinForms_Controls_GracialList_ChangedEventArgs_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.GLColumn_Changed(System.Object,GCore.WinForms.Controls.GracialList.ChangedEventArgs)">GLColumn_Changed(Object, ChangedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Column has changed.  Pass Event up the chain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GLColumn_Changed(object source, ChangedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.GracialList.ChangedEventArgs.html">ChangedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_IndexOf_GCore_WinForms_Controls_GracialList_GLColumn_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.IndexOf(GCore.WinForms.Controls.GracialList.GLColumn)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L668">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_IndexOf_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.IndexOf*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_IndexOf_GCore_WinForms_Controls_GracialList_GLColumn_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.IndexOf(GCore.WinForms.Controls.GracialList.GLColumn)">IndexOf(GLColumn)</h4>
+  <div class="markdown level1 summary"><p>Return index of column in collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(GLColumn column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.GracialList.GLColumn.html">GLColumn</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_Remove_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.Remove(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L641">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Remove_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Remove*"></a>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_Remove_System_Int32_" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.Remove(System.Int32)">Remove(Int32)</h4>
+  <div class="markdown level1 summary"><p>Remove Column from collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(int nColumnIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">nColumnIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection_ChangedEvent.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection.ChangedEvent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L442">View Source</a>
+  </span>
+  <h4 id="GCore_WinForms_Controls_GracialList_GLColumnCollection_ChangedEvent" data-uid="GCore.WinForms.Controls.GracialList.GLColumnCollection.ChangedEvent">ChangedEvent</h4>
+  <div class="markdown level1 summary"><p>Column or Column Collection has changed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ChangedEventHandler ChangedEvent</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.GracialList.ChangedEventHandler.html">ChangedEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.IList</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.ICollection</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GCore.Extensions.Class.ClassExtensions.html#GCore_Extensions_Class_ClassExtensions_ThrowIfArgumentIsNull__1___0_System_String_">ClassExtensions.ThrowIfArgumentIsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.EnumEx.EnumExtensions.html#GCore_Extensions_EnumEx_EnumExtensions_Flag__1___0___0_">EnumExtensions.Flag&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_Serialize__1___0_GCore_Extensions_SerializingEx_SerializingExtensions_Serializer_">SerializingExtensions.Serialize&lt;T&gt;(T, SerializingExtensions.Serializer)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeBinary__1___0_">SerializingExtensions.SerializeBinary&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeSoap__1___0_">SerializingExtensions.SerializeSoap&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeXML__1___0_System_Boolean_">SerializingExtensions.SerializeXML&lt;T&gt;(T, Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_GracialList_GLColumnCollection.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.GracialList.GLColumnCollection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/GlacialList/ColumnCollection.cs/#L421" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

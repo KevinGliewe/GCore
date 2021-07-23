@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ILoggingHandler
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ILoggingHandler
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.Logging.ILoggingHandler">
+  
+  
+  <h1 id="GCore_Logging_ILoggingHandler" data-uid="GCore.Logging.ILoggingHandler" class="text-break">Interface ILoggingHandler
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Logging.html">GCore.Logging</a></h6>
+  <h6><strong>Assembly</strong>: GCore.dll</h6>
+  <h5 id="GCore_Logging_ILoggingHandler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ILoggingHandler</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Logging_ILoggingHandler_Debug_DateTime_System_String_StackTrace_System_Object___.md&amp;value=---%0Auid%3A%20GCore.Logging.ILoggingHandler.Debug(DateTime%2CSystem.String%2CStackTrace%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Logging/ILoggingHandler.cs/#L12">View Source</a>
+  </span>
+  <a id="GCore_Logging_ILoggingHandler_Debug_" data-uid="GCore.Logging.ILoggingHandler.Debug*"></a>
+  <h4 id="GCore_Logging_ILoggingHandler_Debug_DateTime_System_String_StackTrace_System_Object___" data-uid="GCore.Logging.ILoggingHandler.Debug(DateTime,System.String,StackTrace,System.Object[])">Debug(DateTime, String, StackTrace, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Debug(DateTime timestamp, string Message, StackTrace Stacktrace, params object[] list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">StackTrace</span></td>
+        <td><span class="parametername">Stacktrace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Logging_ILoggingHandler_Error_DateTime_System_String_StackTrace_System_Object___.md&amp;value=---%0Auid%3A%20GCore.Logging.ILoggingHandler.Error(DateTime%2CSystem.String%2CStackTrace%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Logging/ILoggingHandler.cs/#L14">View Source</a>
+  </span>
+  <a id="GCore_Logging_ILoggingHandler_Error_" data-uid="GCore.Logging.ILoggingHandler.Error*"></a>
+  <h4 id="GCore_Logging_ILoggingHandler_Error_DateTime_System_String_StackTrace_System_Object___" data-uid="GCore.Logging.ILoggingHandler.Error(DateTime,System.String,StackTrace,System.Object[])">Error(DateTime, String, StackTrace, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Error(DateTime timestamp, string Message, StackTrace Stacktrace, params object[] list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">StackTrace</span></td>
+        <td><span class="parametername">Stacktrace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Logging_ILoggingHandler_Exaption_DateTime_System_String_Exception_StackTrace_System_Object___.md&amp;value=---%0Auid%3A%20GCore.Logging.ILoggingHandler.Exaption(DateTime%2CSystem.String%2CException%2CStackTrace%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Logging/ILoggingHandler.cs/#L13">View Source</a>
+  </span>
+  <a id="GCore_Logging_ILoggingHandler_Exaption_" data-uid="GCore.Logging.ILoggingHandler.Exaption*"></a>
+  <h4 id="GCore_Logging_ILoggingHandler_Exaption_DateTime_System_String_Exception_StackTrace_System_Object___" data-uid="GCore.Logging.ILoggingHandler.Exaption(DateTime,System.String,Exception,StackTrace,System.Object[])">Exaption(DateTime, String, Exception, StackTrace, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Exaption(DateTime timestamp, string Message, Exception exception, StackTrace Stacktrace, params object[] list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">StackTrace</span></td>
+        <td><span class="parametername">Stacktrace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Logging_ILoggingHandler_Fatal_DateTime_System_String_StackTrace_System_Object___.md&amp;value=---%0Auid%3A%20GCore.Logging.ILoggingHandler.Fatal(DateTime%2CSystem.String%2CStackTrace%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Logging/ILoggingHandler.cs/#L15">View Source</a>
+  </span>
+  <a id="GCore_Logging_ILoggingHandler_Fatal_" data-uid="GCore.Logging.ILoggingHandler.Fatal*"></a>
+  <h4 id="GCore_Logging_ILoggingHandler_Fatal_DateTime_System_String_StackTrace_System_Object___" data-uid="GCore.Logging.ILoggingHandler.Fatal(DateTime,System.String,StackTrace,System.Object[])">Fatal(DateTime, String, StackTrace, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Fatal(DateTime timestamp, string Message, StackTrace Stacktrace, params object[] list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">StackTrace</span></td>
+        <td><span class="parametername">Stacktrace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Logging_ILoggingHandler_General_GCore_Logging_LogEntry_.md&amp;value=---%0Auid%3A%20GCore.Logging.ILoggingHandler.General(GCore.Logging.LogEntry)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Logging/ILoggingHandler.cs/#L17">View Source</a>
+  </span>
+  <a id="GCore_Logging_ILoggingHandler_General_" data-uid="GCore.Logging.ILoggingHandler.General*"></a>
+  <h4 id="GCore_Logging_ILoggingHandler_General_GCore_Logging_LogEntry_" data-uid="GCore.Logging.ILoggingHandler.General(GCore.Logging.LogEntry)">General(LogEntry)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void General(LogEntry logEntry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Logging.LogEntry.html">LogEntry</a></td>
+        <td><span class="parametername">logEntry</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Logging_ILoggingHandler_Info_DateTime_System_String_StackTrace_System_Object___.md&amp;value=---%0Auid%3A%20GCore.Logging.ILoggingHandler.Info(DateTime%2CSystem.String%2CStackTrace%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Logging/ILoggingHandler.cs/#L10">View Source</a>
+  </span>
+  <a id="GCore_Logging_ILoggingHandler_Info_" data-uid="GCore.Logging.ILoggingHandler.Info*"></a>
+  <h4 id="GCore_Logging_ILoggingHandler_Info_DateTime_System_String_StackTrace_System_Object___" data-uid="GCore.Logging.ILoggingHandler.Info(DateTime,System.String,StackTrace,System.Object[])">Info(DateTime, String, StackTrace, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Info(DateTime timestamp, string Message, StackTrace Stacktrace, params object[] list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">StackTrace</span></td>
+        <td><span class="parametername">Stacktrace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Logging_ILoggingHandler_Success_DateTime_System_String_StackTrace_System_Object___.md&amp;value=---%0Auid%3A%20GCore.Logging.ILoggingHandler.Success(DateTime%2CSystem.String%2CStackTrace%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Logging/ILoggingHandler.cs/#L9">View Source</a>
+  </span>
+  <a id="GCore_Logging_ILoggingHandler_Success_" data-uid="GCore.Logging.ILoggingHandler.Success*"></a>
+  <h4 id="GCore_Logging_ILoggingHandler_Success_DateTime_System_String_StackTrace_System_Object___" data-uid="GCore.Logging.ILoggingHandler.Success(DateTime,System.String,StackTrace,System.Object[])">Success(DateTime, String, StackTrace, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Success(DateTime timestamp, string Message, StackTrace Stacktrace, params object[] list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">StackTrace</span></td>
+        <td><span class="parametername">Stacktrace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Logging_ILoggingHandler_Warn_DateTime_System_String_StackTrace_System_Object___.md&amp;value=---%0Auid%3A%20GCore.Logging.ILoggingHandler.Warn(DateTime%2CSystem.String%2CStackTrace%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Logging/ILoggingHandler.cs/#L11">View Source</a>
+  </span>
+  <a id="GCore_Logging_ILoggingHandler_Warn_" data-uid="GCore.Logging.ILoggingHandler.Warn*"></a>
+  <h4 id="GCore_Logging_ILoggingHandler_Warn_DateTime_System_String_StackTrace_System_Object___" data-uid="GCore.Logging.ILoggingHandler.Warn(DateTime,System.String,StackTrace,System.Object[])">Warn(DateTime, String, StackTrace, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Warn(DateTime timestamp, string Message, StackTrace Stacktrace, params object[] list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">StackTrace</span></td>
+        <td><span class="parametername">Stacktrace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GCore.Extensions.Class.ClassExtensions.html#GCore_Extensions_Class_ClassExtensions_ThrowIfArgumentIsNull__1___0_System_String_">ClassExtensions.ThrowIfArgumentIsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.EnumEx.EnumExtensions.html#GCore_Extensions_EnumEx_EnumExtensions_Flag__1___0___0_">EnumExtensions.Flag&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_Serialize__1___0_GCore_Extensions_SerializingEx_SerializingExtensions_Serializer_">SerializingExtensions.Serialize&lt;T&gt;(T, SerializingExtensions.Serializer)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeBinary__1___0_">SerializingExtensions.SerializeBinary&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeSoap__1___0_">SerializingExtensions.SerializeSoap&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeXML__1___0_System_Boolean_">SerializingExtensions.SerializeXML&lt;T&gt;(T, Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Logging_ILoggingHandler.md&amp;value=---%0Auid%3A%20GCore.Logging.ILoggingHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Logging/ILoggingHandler.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1109 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ITreeNode&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ITreeNode&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.Data.Structure.Tree.ITreeNode`1">
+  
+  
+  <h1 id="GCore_Data_Structure_Tree_ITreeNode_1" data-uid="GCore.Data.Structure.Tree.ITreeNode`1" class="text-break">Interface ITreeNode&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Data.Structure.Tree.html">GCore.Data.Structure.Tree</a></h6>
+  <h6><strong>Assembly</strong>: GCore.dll</h6>
+  <h5 id="GCore_Data_Structure_Tree_ITreeNode_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ITreeNode&lt;T&gt; : IDisposable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_Ancestors.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.Ancestors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L14">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_Ancestors_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Ancestors*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_Ancestors" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Ancestors">Ancestors</h4>
+  <div class="markdown level1 summary"><p>Gets an enumeration of all tree nodes which are above the current node in the tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;ITreeNode&lt;T&gt;&gt; Ancestors { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;&gt;</td>
+        <td><p>An enumeration of all tree nodes which are above the current node in the tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_AncestorsTraversalDirection.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.AncestorsTraversalDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L58">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_AncestorsTraversalDirection_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.AncestorsTraversalDirection*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_AncestorsTraversalDirection" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.AncestorsTraversalDirection">AncestorsTraversalDirection</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the ancestors traversal direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TreeTraversalDirection AncestorsTraversalDirection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.TreeTraversalDirection.html">TreeTraversalDirection</a></td>
+        <td><p>The ancestors traversal direction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_Children.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.Children%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L40">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_Children_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Children*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_Children" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Children">Children</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the children of the node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITreeNodeCollection&lt;T&gt; Children { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.ITreeNodeCollection-1.html">ITreeNodeCollection</a>&lt;T&gt;</td>
+        <td><p>The children of the node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_Depth.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.Depth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L76">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_Depth_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Depth*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_Depth" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Depth">Depth</h4>
+  <div class="markdown level1 summary"><p>Gets the depth of the node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Int32 Depth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Int32</span></td>
+        <td><p>The depth of the node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_Descendants.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.Descendants%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L94">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_Descendants_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Descendants*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_Descendants" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Descendants">Descendants</h4>
+  <div class="markdown level1 summary"><p>Gets an enumeration of all tree nodes which are below the current node in the tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;ITreeNode&lt;T&gt;&gt; Descendants { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;&gt;</td>
+        <td><p>An enumeration of all tree nodes which are below the current node in the tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_DescendantsTraversalDirection.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.DescendantsTraversalDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L64">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_DescendantsTraversalDirection_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.DescendantsTraversalDirection*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_DescendantsTraversalDirection" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.DescendantsTraversalDirection">DescendantsTraversalDirection</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the descendants traversal direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TreeTraversalDirection DescendantsTraversalDirection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.TreeTraversalDirection.html">TreeTraversalDirection</a></td>
+        <td><p>The descendants traversal direction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_DisposeTraversalDirection.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.DisposeTraversalDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L52">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_DisposeTraversalDirection_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.DisposeTraversalDirection*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_DisposeTraversalDirection" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.DisposeTraversalDirection">DisposeTraversalDirection</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the dispose traversal direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TreeTraversalDirection DisposeTraversalDirection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.TreeTraversalDirection.html">TreeTraversalDirection</a></td>
+        <td><p>The dispose traversal direction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_HasChildren.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.HasChildren%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L82">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_HasChildren_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.HasChildren*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_HasChildren" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.HasChildren">HasChildren</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the node has any children or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Boolean HasChildren { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Boolean</span></td>
+        <td><p>A value indicating whether the node has any children or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_HasParent.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.HasParent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L88">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_HasParent_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.HasParent*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_HasParent" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.HasParent">HasParent</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the node has a parent or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Boolean HasParent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Boolean</span></td>
+        <td><p>A value indicating whether the node has a parent or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_Parent.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.Parent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L29">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_Parent_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Parent*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_Parent" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Parent">Parent</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the parent of the node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITreeNode&lt;T&gt; Parent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;</td>
+        <td><p>The parent of the node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GCore_Data_Structure_Tree_ITreeNode_1_Parent_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Detaches the node from it's old parent and attaches it to it's new parent.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_Root.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.Root%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L35">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_Root_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Root*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_Root" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Root">Root</h4>
+  <div class="markdown level1 summary"><p>Gets the root of the tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITreeNode&lt;T&gt; Root { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;</td>
+        <td><p>The root of the tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_SearchTraversalDirection.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.SearchTraversalDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L46">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_SearchTraversalDirection_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.SearchTraversalDirection*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_SearchTraversalDirection" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.SearchTraversalDirection">SearchTraversalDirection</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the search traversal direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TreeTraversalDirection SearchTraversalDirection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.TreeTraversalDirection.html">TreeTraversalDirection</a></td>
+        <td><p>The search traversal direction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_TraversalDirection.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.TraversalDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L70">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_TraversalDirection_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.TraversalDirection*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_TraversalDirection" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.TraversalDirection">TraversalDirection</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the traversal direction used to enumerate the nodes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TreeTraversalDirection TraversalDirection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.TreeTraversalDirection.html">TreeTraversalDirection</a></td>
+        <td><p>The traversal direction used to enumerate the nodes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_Value.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L20">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_Value_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Value*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_Value" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value of the node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">T Value { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The value of the node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_Add__0_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.Add(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L137">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_Add_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Add*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_Add__0_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Add(`0)">Add(T)</h4>
+  <div class="markdown level1 summary"><p>Adds the given value as child to the node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITreeNode&lt;T&gt; Add(T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;</td>
+        <td><p>Returns the added node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_Add_GCore_Data_Structure_Tree_ITreeNode__0__.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.Add(GCore.Data.Structure.Tree.ITreeNode%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L144">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_Add_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Add*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_Add_GCore_Data_Structure_Tree_ITreeNode__0__" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.Add(GCore.Data.Structure.Tree.ITreeNode{`0})">Add(ITreeNode&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the given node as child to the node, if it is not already a child of the node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITreeNode&lt;T&gt; Add(ITreeNode&lt;T&gt; node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;</td>
+        <td><span class="parametername">node</span></td>
+        <td><p>The node to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;</td>
+        <td><p>Returns the added node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_FindNode__0_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.FindNode(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L126">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_FindNode_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.FindNode*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_FindNode__0_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.FindNode(`0)">FindNode(T)</h4>
+  <div class="markdown level1 summary"><p>Gets the nodes with the given value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;ITreeNode&lt;T&gt;&gt; FindNode(T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;&gt;</td>
+        <td><p>Returns the nodes with the given value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_FindNode_Func_GCore_Data_Structure_Tree_ITreeNode__0__Boolean__.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.FindNode(Func%7BGCore.Data.Structure.Tree.ITreeNode%7B%600%7D%2CBoolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L119">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_FindNode_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.FindNode*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_FindNode_Func_GCore_Data_Structure_Tree_ITreeNode__0__Boolean__" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.FindNode(Func{GCore.Data.Structure.Tree.ITreeNode{`0},Boolean})">FindNode(Func&lt;ITreeNode&lt;T&gt;, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets the nodes which matches the given predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;ITreeNode&lt;T&gt;&gt; FindNode(Func&lt;ITreeNode&lt;T&gt;, Boolean&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;, <span class="xref">Boolean</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;&gt;</td>
+        <td><p>Returns the nodes which matches the given predicate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GCore_Data_Structure_Tree_ITreeNode_1_FindNode_Func_GCore_Data_Structure_Tree_ITreeNode__0__Boolean___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Starts the search at the current tree node and traverses down the tree (Direction based on
+<a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html#GCore_Data_Structure_Tree_ITreeNode_1_SearchTraversalDirection">SearchTraversalDirection</a>).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_FindNode_System_String_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.FindNode(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L128">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_FindNode_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.FindNode*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_FindNode_System_String_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.FindNode(System.String)">FindNode(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITreeNode&lt;T&gt; FindNode(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_FindNode_System_String___.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.FindNode(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L130">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_FindNode_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.FindNode*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_FindNode_System_String___" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.FindNode(System.String[])">FindNode(String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITreeNode&lt;T&gt; FindNode(params string[] path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_FindValue_Func_GCore_Data_Structure_Tree_ITreeNode__0__Boolean__.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.FindValue(Func%7BGCore.Data.Structure.Tree.ITreeNode%7B%600%7D%2CBoolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L108">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_FindValue_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.FindValue*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_FindValue_Func_GCore_Data_Structure_Tree_ITreeNode__0__Boolean__" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.FindValue(Func{GCore.Data.Structure.Tree.ITreeNode{`0},Boolean})">FindValue(Func&lt;ITreeNode&lt;T&gt;, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets the values which matches the given predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;T&gt; FindValue(Func&lt;ITreeNode&lt;T&gt;, Boolean&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;, <span class="xref">Boolean</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><p>Returns the values which matches the given predicate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GCore_Data_Structure_Tree_ITreeNode_1_FindValue_Func_GCore_Data_Structure_Tree_ITreeNode__0__Boolean___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Starts the search at the current tree node and traverses down the tree (Direction based on
+<a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html#GCore_Data_Structure_Tree_ITreeNode_1_SearchTraversalDirection">SearchTraversalDirection</a>).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_GetName.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.GetName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L166">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_GetName_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.GetName*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_GetName" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.GetName">GetName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_GetPath.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.GetPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L168">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_GetPath_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.GetPath*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_GetPath" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.GetPath">GetPath()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string[] GetPath()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_SetAllDirections_GCore_Data_Structure_Tree_TreeTraversalDirection_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.SetAllDirections(GCore.Data.Structure.Tree.TreeTraversalDirection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L164">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_SetAllDirections_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.SetAllDirections*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_SetAllDirections_GCore_Data_Structure_Tree_TreeTraversalDirection_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.SetAllDirections(GCore.Data.Structure.Tree.TreeTraversalDirection)">SetAllDirections(TreeTraversalDirection)</h4>
+  <div class="markdown level1 summary"><p>Sets all directions (<a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html#GCore_Data_Structure_Tree_ITreeNode_1_DisposeTraversalDirection">DisposeTraversalDirection</a>, <a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html#GCore_Data_Structure_Tree_ITreeNode_1_SearchTraversalDirection">SearchTraversalDirection</a>,
+<a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html#GCore_Data_Structure_Tree_ITreeNode_1_AncestorsTraversalDirection">AncestorsTraversalDirection</a>, <a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html#GCore_Data_Structure_Tree_ITreeNode_1_DescendantsTraversalDirection">DescendantsTraversalDirection</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetAllDirections(TreeTraversalDirection direction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.TreeTraversalDirection.html">TreeTraversalDirection</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>The new direction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1_SetParent_GCore_Data_Structure_Tree_ITreeNode__0__Boolean_Boolean_.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601.SetParent(GCore.Data.Structure.Tree.ITreeNode%7B%600%7D%2CBoolean%2CBoolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L155">View Source</a>
+  </span>
+  <a id="GCore_Data_Structure_Tree_ITreeNode_1_SetParent_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.SetParent*"></a>
+  <h4 id="GCore_Data_Structure_Tree_ITreeNode_1_SetParent_GCore_Data_Structure_Tree_ITreeNode__0__Boolean_Boolean_" data-uid="GCore.Data.Structure.Tree.ITreeNode`1.SetParent(GCore.Data.Structure.Tree.ITreeNode{`0},Boolean,Boolean)">SetParent(ITreeNode&lt;T&gt;, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the parent of the tree node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetParent(ITreeNode&lt;T&gt; parent, Boolean attacheToNewParent = null, Boolean detachFromOldParent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.Structure.Tree.ITreeNode-1.html">ITreeNode</a>&lt;T&gt;</td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>The new parent.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Boolean</span></td>
+        <td><span class="parametername">attacheToNewParent</span></td>
+        <td><p>A value determining whether the node should add it self to the children of the new parent
+or not.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Boolean</span></td>
+        <td><span class="parametername">detachFromOldParent</span></td>
+        <td><p>A value indicating whether the node should detach itself from it's old parent or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GCore.Extensions.Class.ClassExtensions.html#GCore_Extensions_Class_ClassExtensions_ThrowIfArgumentIsNull__1___0_System_String_">ClassExtensions.ThrowIfArgumentIsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.EnumEx.EnumExtensions.html#GCore_Extensions_EnumEx_EnumExtensions_Flag__1___0___0_">EnumExtensions.Flag&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_Serialize__1___0_GCore_Extensions_SerializingEx_SerializingExtensions_Serializer_">SerializingExtensions.Serialize&lt;T&gt;(T, SerializingExtensions.Serializer)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeBinary__1___0_">SerializingExtensions.SerializeBinary&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeSoap__1___0_">SerializingExtensions.SerializeSoap&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeXML__1___0_System_Boolean_">SerializingExtensions.SerializeXML&lt;T&gt;(T, Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Data_Structure_Tree_ITreeNode_1.md&amp;value=---%0Auid%3A%20GCore.Data.Structure.Tree.ITreeNode%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Data/Structure/Tree/ITreeNode.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

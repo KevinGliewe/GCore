@@ -1,0 +1,404 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SslSocket
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SslSocket
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.Networking.Socket.SslSocket">
+  
+  
+  <h1 id="GCore_Networking_Socket_SslSocket" data-uid="GCore.Networking.Socket.SslSocket" class="text-break">Class SslSocket
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GCore.Networking.Socket.BaseSocket.html">BaseSocket</a></div>
+    <div class="level2"><span class="xref">SslSocket</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Name">BaseSocket.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_isActive">BaseSocket.isActive</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_DataArrived">BaseSocket.DataArrived</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Closed">BaseSocket.Closed</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_MaxPackSize">BaseSocket.MaxPackSize</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Init_Stream_Stream_System_Int32_">BaseSocket.Init(Stream, Stream, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Kill">BaseSocket.Kill()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Send_System_String_">BaseSocket.Send(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Send_System_Byte___">BaseSocket.Send(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Send_System_Int32___">BaseSocket.Send(Int32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Send_System_UInt32___">BaseSocket.Send(UInt32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Send_System_Int16___">BaseSocket.Send(Int16[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Send_System_Single___">BaseSocket.Send(Single[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Send_System_Double___">BaseSocket.Send(Double[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Send_System_Int64___">BaseSocket.Send(Int64[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Send_System_Boolean___">BaseSocket.Send(Boolean[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Send_System_Char___">BaseSocket.Send(Char[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Send_System_UInt64___">BaseSocket.Send(UInt64[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Send_System_UInt16___">BaseSocket.Send(UInt16[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket__readerloop">BaseSocket._readerloop()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_PushDataArrived_System_Byte___">BaseSocket.PushDataArrived(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_PushClosed">BaseSocket.PushClosed()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_InStream">BaseSocket.InStream</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_OutStream">BaseSocket.OutStream</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Networking.Socket.BaseSocket.html#GCore_Networking_Socket_BaseSocket_Dispose">BaseSocket.Dispose()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Networking.Socket.html">GCore.Networking.Socket</a></h6>
+  <h6><strong>Assembly</strong>: GCore.dll</h6>
+  <h5 id="GCore_Networking_Socket_SslSocket_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SslSocket : BaseSocket</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_Socket_SslSocket__ctor.md&amp;value=---%0Auid%3A%20GCore.Networking.Socket.SslSocket.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/Socket/SslSocket.cs/#L27">View Source</a>
+  </span>
+  <a id="GCore_Networking_Socket_SslSocket__ctor_" data-uid="GCore.Networking.Socket.SslSocket.#ctor*"></a>
+  <h4 id="GCore_Networking_Socket_SslSocket__ctor" data-uid="GCore.Networking.Socket.SslSocket.#ctor">SslSocket()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SslSocket()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_Socket_SslSocket__ctor_X509Certificate_TcpClient_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Networking.Socket.SslSocket.%23ctor(X509Certificate%2CTcpClient%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/Socket/SslSocket.cs/#L30">View Source</a>
+  </span>
+  <a id="GCore_Networking_Socket_SslSocket__ctor_" data-uid="GCore.Networking.Socket.SslSocket.#ctor*"></a>
+  <h4 id="GCore_Networking_Socket_SslSocket__ctor_X509Certificate_TcpClient_System_Boolean_System_Int32_" data-uid="GCore.Networking.Socket.SslSocket.#ctor(X509Certificate,TcpClient,System.Boolean,System.Int32)">SslSocket(X509Certificate, TcpClient, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SslSocket(X509Certificate certificate, TcpClient tcpclient, bool isServer, int maxPackSize = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">X509Certificate</span></td>
+        <td><span class="parametername">certificate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TcpClient</span></td>
+        <td><span class="parametername">tcpclient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isServer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxPackSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_Socket_SslSocket_Init_X509Certificate_TcpClient_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Networking.Socket.SslSocket.Init(X509Certificate%2CTcpClient%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/Socket/SslSocket.cs/#L35">View Source</a>
+  </span>
+  <a id="GCore_Networking_Socket_SslSocket_Init_" data-uid="GCore.Networking.Socket.SslSocket.Init*"></a>
+  <h4 id="GCore_Networking_Socket_SslSocket_Init_X509Certificate_TcpClient_System_Boolean_System_Int32_" data-uid="GCore.Networking.Socket.SslSocket.Init(X509Certificate,TcpClient,System.Boolean,System.Int32)">Init(X509Certificate, TcpClient, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init(X509Certificate certificate, TcpClient tcpclient, bool isServer, int maxPackSize = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">X509Certificate</span></td>
+        <td><span class="parametername">certificate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TcpClient</span></td>
+        <td><span class="parametername">tcpclient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isServer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxPackSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_Socket_SslSocket_ValidateServerCertificate_System_Object_X509Certificate_X509Chain_SslPolicyErrors_.md&amp;value=---%0Auid%3A%20GCore.Networking.Socket.SslSocket.ValidateServerCertificate(System.Object%2CX509Certificate%2CX509Chain%2CSslPolicyErrors)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/Socket/SslSocket.cs/#L58">View Source</a>
+  </span>
+  <a id="GCore_Networking_Socket_SslSocket_ValidateServerCertificate_" data-uid="GCore.Networking.Socket.SslSocket.ValidateServerCertificate*"></a>
+  <h4 id="GCore_Networking_Socket_SslSocket_ValidateServerCertificate_System_Object_X509Certificate_X509Chain_SslPolicyErrors_" data-uid="GCore.Networking.Socket.SslSocket.ValidateServerCertificate(System.Object,X509Certificate,X509Chain,SslPolicyErrors)">ValidateServerCertificate(Object, X509Certificate, X509Chain, SslPolicyErrors)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ValidateServerCertificate(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">X509Certificate</span></td>
+        <td><span class="parametername">certificate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">X509Chain</span></td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SslPolicyErrors</span></td>
+        <td><span class="parametername">sslPolicyErrors</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GCore.Extensions.Class.ClassExtensions.html#GCore_Extensions_Class_ClassExtensions_ThrowIfArgumentIsNull__1___0_System_String_">ClassExtensions.ThrowIfArgumentIsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.EnumEx.EnumExtensions.html#GCore_Extensions_EnumEx_EnumExtensions_Flag__1___0___0_">EnumExtensions.Flag&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_Serialize__1___0_GCore_Extensions_SerializingEx_SerializingExtensions_Serializer_">SerializingExtensions.Serialize&lt;T&gt;(T, SerializingExtensions.Serializer)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeBinary__1___0_">SerializingExtensions.SerializeBinary&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeSoap__1___0_">SerializingExtensions.SerializeSoap&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeXML__1___0_System_Boolean_">SerializingExtensions.SerializeXML&lt;T&gt;(T, Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_Socket_SslSocket.md&amp;value=---%0Auid%3A%20GCore.Networking.Socket.SslSocket%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/Socket/SslSocket.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

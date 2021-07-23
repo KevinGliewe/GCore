@@ -1,0 +1,994 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RPCProxyObject
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RPCProxyObject
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.Networking.RPC.RPCProxyObject">
+  
+  
+  <h1 id="GCore_Networking_RPC_RPCProxyObject" data-uid="GCore.Networking.RPC.RPCProxyObject" class="text-break">Class RPCProxyObject
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RPCProxyObject</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Networking.RPC.html">GCore.Networking.RPC</a></h6>
+  <h6><strong>Assembly</strong>: GCore.dll</h6>
+  <h5 id="GCore_Networking_RPC_RPCProxyObject_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RPCProxyObject : DynamicObject</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject__ctor_GCore_Networking_RPC_RPCClient_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.%23ctor(GCore.Networking.RPC.RPCClient%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L30">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject__ctor_" data-uid="GCore.Networking.RPC.RPCProxyObject.#ctor*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject__ctor_GCore_Networking_RPC_RPCClient_System_Int32_" data-uid="GCore.Networking.RPC.RPCProxyObject.#ctor(GCore.Networking.RPC.RPCClient,System.Int32)">RPCProxyObject(RPCClient, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RPCProxyObject(RPCClient client, int objectID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Networking.RPC.RPCClient.html">RPCClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">objectID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_Client.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.Client%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L22">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_Client_" data-uid="GCore.Networking.RPC.RPCProxyObject.Client*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_Client" data-uid="GCore.Networking.RPC.RPCProxyObject.Client">Client</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RPCClient Client { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Networking.RPC.RPCClient.html">RPCClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_ObjectID.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.ObjectID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L23">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_ObjectID_" data-uid="GCore.Networking.RPC.RPCProxyObject.ObjectID*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_ObjectID" data-uid="GCore.Networking.RPC.RPCProxyObject.ObjectID">ObjectID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ObjectID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_Finalize.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L38">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_Finalize_" data-uid="GCore.Networking.RPC.RPCProxyObject.Finalize*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_Finalize" data-uid="GCore.Networking.RPC.RPCProxyObject.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_GetDynamicMemberNames.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.GetDynamicMemberNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L50">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_GetDynamicMemberNames_" data-uid="GCore.Networking.RPC.RPCProxyObject.GetDynamicMemberNames*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_GetDynamicMemberNames" data-uid="GCore.Networking.RPC.RPCProxyObject.GetDynamicMemberNames">GetDynamicMemberNames()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;string&gt; GetDynamicMemberNames()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_GetMetaObject_Expression_.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.GetMetaObject(Expression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L55">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_GetMetaObject_" data-uid="GCore.Networking.RPC.RPCProxyObject.GetMetaObject*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_GetMetaObject_Expression_" data-uid="GCore.Networking.RPC.RPCProxyObject.GetMetaObject(Expression)">GetMetaObject(Expression)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DynamicMetaObject GetMetaObject(Expression parameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Expression</span></td>
+        <td><span class="parametername">parameter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DynamicMetaObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_TryBinaryOperation_BinaryOperationBinder_System_Object_System_Object__.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.TryBinaryOperation(BinaryOperationBinder%2CSystem.Object%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L60">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_TryBinaryOperation_" data-uid="GCore.Networking.RPC.RPCProxyObject.TryBinaryOperation*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_TryBinaryOperation_BinaryOperationBinder_System_Object_System_Object__" data-uid="GCore.Networking.RPC.RPCProxyObject.TryBinaryOperation(BinaryOperationBinder,System.Object,System.Object@)">TryBinaryOperation(BinaryOperationBinder, Object, out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryBinaryOperation(BinaryOperationBinder binder, object arg, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BinaryOperationBinder</span></td>
+        <td><span class="parametername">binder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">arg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_TryConvert_ConvertBinder_System_Object__.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.TryConvert(ConvertBinder%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L65">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_TryConvert_" data-uid="GCore.Networking.RPC.RPCProxyObject.TryConvert*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_TryConvert_ConvertBinder_System_Object__" data-uid="GCore.Networking.RPC.RPCProxyObject.TryConvert(ConvertBinder,System.Object@)">TryConvert(ConvertBinder, out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryConvert(ConvertBinder binder, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ConvertBinder</span></td>
+        <td><span class="parametername">binder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_TryCreateInstance_CreateInstanceBinder_System_Object___System_Object__.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.TryCreateInstance(CreateInstanceBinder%2CSystem.Object%5B%5D%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L72">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_TryCreateInstance_" data-uid="GCore.Networking.RPC.RPCProxyObject.TryCreateInstance*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_TryCreateInstance_CreateInstanceBinder_System_Object___System_Object__" data-uid="GCore.Networking.RPC.RPCProxyObject.TryCreateInstance(CreateInstanceBinder,System.Object[],System.Object@)">TryCreateInstance(CreateInstanceBinder, Object[], out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryCreateInstance(CreateInstanceBinder binder, object[] args, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CreateInstanceBinder</span></td>
+        <td><span class="parametername">binder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_TryDeleteIndex_DeleteIndexBinder_System_Object___.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.TryDeleteIndex(DeleteIndexBinder%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L77">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_TryDeleteIndex_" data-uid="GCore.Networking.RPC.RPCProxyObject.TryDeleteIndex*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_TryDeleteIndex_DeleteIndexBinder_System_Object___" data-uid="GCore.Networking.RPC.RPCProxyObject.TryDeleteIndex(DeleteIndexBinder,System.Object[])">TryDeleteIndex(DeleteIndexBinder, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryDeleteIndex(DeleteIndexBinder binder, object[] indexes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DeleteIndexBinder</span></td>
+        <td><span class="parametername">binder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">indexes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_TryDeleteMember_DeleteMemberBinder_.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.TryDeleteMember(DeleteMemberBinder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L82">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_TryDeleteMember_" data-uid="GCore.Networking.RPC.RPCProxyObject.TryDeleteMember*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_TryDeleteMember_DeleteMemberBinder_" data-uid="GCore.Networking.RPC.RPCProxyObject.TryDeleteMember(DeleteMemberBinder)">TryDeleteMember(DeleteMemberBinder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryDeleteMember(DeleteMemberBinder binder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DeleteMemberBinder</span></td>
+        <td><span class="parametername">binder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_TryGetIndex_GetIndexBinder_System_Object___System_Object__.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.TryGetIndex(GetIndexBinder%2CSystem.Object%5B%5D%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L87">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_TryGetIndex_" data-uid="GCore.Networking.RPC.RPCProxyObject.TryGetIndex*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_TryGetIndex_GetIndexBinder_System_Object___System_Object__" data-uid="GCore.Networking.RPC.RPCProxyObject.TryGetIndex(GetIndexBinder,System.Object[],System.Object@)">TryGetIndex(GetIndexBinder, Object[], out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryGetIndex(GetIndexBinder binder, object[] indexes, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GetIndexBinder</span></td>
+        <td><span class="parametername">binder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">indexes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_TryGetMember_GetMemberBinder_System_Object__.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.TryGetMember(GetMemberBinder%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L92">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_TryGetMember_" data-uid="GCore.Networking.RPC.RPCProxyObject.TryGetMember*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_TryGetMember_GetMemberBinder_System_Object__" data-uid="GCore.Networking.RPC.RPCProxyObject.TryGetMember(GetMemberBinder,System.Object@)">TryGetMember(GetMemberBinder, out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryGetMember(GetMemberBinder binder, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GetMemberBinder</span></td>
+        <td><span class="parametername">binder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_TryInvoke_InvokeBinder_System_Object___System_Object__.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.TryInvoke(InvokeBinder%2CSystem.Object%5B%5D%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L113">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_TryInvoke_" data-uid="GCore.Networking.RPC.RPCProxyObject.TryInvoke*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_TryInvoke_InvokeBinder_System_Object___System_Object__" data-uid="GCore.Networking.RPC.RPCProxyObject.TryInvoke(InvokeBinder,System.Object[],System.Object@)">TryInvoke(InvokeBinder, Object[], out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryInvoke(InvokeBinder binder, object[] args, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">InvokeBinder</span></td>
+        <td><span class="parametername">binder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_TryInvokeMember_InvokeMemberBinder_System_Object___System_Object__.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.TryInvokeMember(InvokeMemberBinder%2CSystem.Object%5B%5D%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L118">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_TryInvokeMember_" data-uid="GCore.Networking.RPC.RPCProxyObject.TryInvokeMember*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_TryInvokeMember_InvokeMemberBinder_System_Object___System_Object__" data-uid="GCore.Networking.RPC.RPCProxyObject.TryInvokeMember(InvokeMemberBinder,System.Object[],System.Object@)">TryInvokeMember(InvokeMemberBinder, Object[], out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryInvokeMember(InvokeMemberBinder binder, object[] args, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">InvokeMemberBinder</span></td>
+        <td><span class="parametername">binder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_TrySetIndex_SetIndexBinder_System_Object___System_Object_.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.TrySetIndex(SetIndexBinder%2CSystem.Object%5B%5D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L139">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_TrySetIndex_" data-uid="GCore.Networking.RPC.RPCProxyObject.TrySetIndex*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_TrySetIndex_SetIndexBinder_System_Object___System_Object_" data-uid="GCore.Networking.RPC.RPCProxyObject.TrySetIndex(SetIndexBinder,System.Object[],System.Object)">TrySetIndex(SetIndexBinder, Object[], Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TrySetIndex(SetIndexBinder binder, object[] indexes, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SetIndexBinder</span></td>
+        <td><span class="parametername">binder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">indexes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_TrySetMember_SetMemberBinder_System_Object_.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.TrySetMember(SetMemberBinder%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L144">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_TrySetMember_" data-uid="GCore.Networking.RPC.RPCProxyObject.TrySetMember*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_TrySetMember_SetMemberBinder_System_Object_" data-uid="GCore.Networking.RPC.RPCProxyObject.TrySetMember(SetMemberBinder,System.Object)">TrySetMember(SetMemberBinder, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TrySetMember(SetMemberBinder binder, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SetMemberBinder</span></td>
+        <td><span class="parametername">binder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject_TryUnaryOperation_UnaryOperationBinder_System_Object__.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject.TryUnaryOperation(UnaryOperationBinder%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L164">View Source</a>
+  </span>
+  <a id="GCore_Networking_RPC_RPCProxyObject_TryUnaryOperation_" data-uid="GCore.Networking.RPC.RPCProxyObject.TryUnaryOperation*"></a>
+  <h4 id="GCore_Networking_RPC_RPCProxyObject_TryUnaryOperation_UnaryOperationBinder_System_Object__" data-uid="GCore.Networking.RPC.RPCProxyObject.TryUnaryOperation(UnaryOperationBinder,System.Object@)">TryUnaryOperation(UnaryOperationBinder, out Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryUnaryOperation(UnaryOperationBinder binder, out object result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnaryOperationBinder</span></td>
+        <td><span class="parametername">binder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GCore.Extensions.Class.ClassExtensions.html#GCore_Extensions_Class_ClassExtensions_ThrowIfArgumentIsNull__1___0_System_String_">ClassExtensions.ThrowIfArgumentIsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.EnumEx.EnumExtensions.html#GCore_Extensions_EnumEx_EnumExtensions_Flag__1___0___0_">EnumExtensions.Flag&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_Serialize__1___0_GCore_Extensions_SerializingEx_SerializingExtensions_Serializer_">SerializingExtensions.Serialize&lt;T&gt;(T, SerializingExtensions.Serializer)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeBinary__1___0_">SerializingExtensions.SerializeBinary&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeSoap__1___0_">SerializingExtensions.SerializeSoap&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeXML__1___0_System_Boolean_">SerializingExtensions.SerializeXML&lt;T&gt;(T, Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Networking_RPC_RPCProxyObject.md&amp;value=---%0Auid%3A%20GCore.Networking.RPC.RPCProxyObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Networking/RPC/RPCProxyObject.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

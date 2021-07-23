@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum Win32API.WindowShowStyle
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum Win32API.WindowShowStyle
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.Sys.Windows.Win32API.WindowShowStyle">
+  
+  
+  <h1 id="GCore_Sys_Windows_Win32API_WindowShowStyle" data-uid="GCore.Sys.Windows.Win32API.WindowShowStyle" class="text-break">Enum Win32API.WindowShowStyle
+  </h1>
+  <div class="markdown level0 summary"><p>Enumeration of the different ways of showing a window using
+ShowWindow</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Sys.Windows.html">GCore.Sys.Windows</a></h6>
+  <h6><strong>Assembly</strong>: GCore.dll</h6>
+  <h5 id="GCore_Sys_Windows_Win32API_WindowShowStyle_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum WindowShowStyle : uint</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="GCore_Sys_Windows_Win32API_WindowShowStyle_ForceMinimized">ForceMinimized</td>
+        <td><p>Windows 2000/XP: Minimizes a window, even if the thread
+that owns the window is hung. This flag should only be used when
+minimizing windows from a different thread.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="GCore_Sys_Windows_Win32API_WindowShowStyle_Hide">Hide</td>
+        <td><p>Hides the window and activates another window.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="GCore_Sys_Windows_Win32API_WindowShowStyle_Maximize">Maximize</td>
+        <td><p>Maximizes the specified window.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="GCore_Sys_Windows_Win32API_WindowShowStyle_Minimize">Minimize</td>
+        <td><p>Minimizes the specified window and activates the next
+top-level window in the Z order.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="GCore_Sys_Windows_Win32API_WindowShowStyle_Restore">Restore</td>
+        <td><p>Activates and displays the window. If the window is
+minimized or maximized, the system restores it to its original size
+and position. An application should specify this flag when restoring
+a minimized window.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="GCore_Sys_Windows_Win32API_WindowShowStyle_Show">Show</td>
+        <td><p>Activates the window and displays it in its current size
+and position.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="GCore_Sys_Windows_Win32API_WindowShowStyle_ShowDefault">ShowDefault</td>
+        <td><p>Sets the show state based on the SW_ value specified in the
+STARTUPINFO structure passed to the CreateProcess function by the
+program that started the application.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="GCore_Sys_Windows_Win32API_WindowShowStyle_ShowMaximized">ShowMaximized</td>
+        <td><p>Activates the window and displays it as a maximized window.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="GCore_Sys_Windows_Win32API_WindowShowStyle_ShowMinimized">ShowMinimized</td>
+        <td><p>Activates the window and displays it as a minimized window.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="GCore_Sys_Windows_Win32API_WindowShowStyle_ShowMinNoActivate">ShowMinNoActivate</td>
+        <td><p>Displays the window as a minimized window. This value is
+similar to &quot;ShowMinimized&quot;, except the window is not activated.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="GCore_Sys_Windows_Win32API_WindowShowStyle_ShowNoActivate">ShowNoActivate</td>
+        <td><p>Displays the window in its current size and position. This
+value is similar to &quot;Show&quot;, except the window is not activated.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="GCore_Sys_Windows_Win32API_WindowShowStyle_ShowNormal">ShowNormal</td>
+        <td><p>Activates and displays a window. If the window is minimized
+or maximized, the system restores it to its original size and
+position. An application should specify this flag when displaying
+the window for the first time.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="GCore_Sys_Windows_Win32API_WindowShowStyle_ShowNormalNoActivate">ShowNormalNoActivate</td>
+        <td><p>Displays a window in its most recent size and position.
+This value is similar to &quot;ShowNormal&quot;, except the window is not
+actived.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GCore.Extensions.EnumEx.EnumExtensions.html#GCore_Extensions_EnumEx_EnumExtensions_Flag__1___0___0_">EnumExtensions.Flag&lt;Win32API.WindowShowStyle&gt;(Win32API.WindowShowStyle)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_Serialize__1___0_GCore_Extensions_SerializingEx_SerializingExtensions_Serializer_">SerializingExtensions.Serialize&lt;Win32API.WindowShowStyle&gt;(SerializingExtensions.Serializer)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeBinary__1___0_">SerializingExtensions.SerializeBinary&lt;Win32API.WindowShowStyle&gt;()</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeSoap__1___0_">SerializingExtensions.SerializeSoap&lt;Win32API.WindowShowStyle&gt;()</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeXML__1___0_System_Boolean_">SerializingExtensions.SerializeXML&lt;Win32API.WindowShowStyle&gt;(Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_Sys_Windows_Win32API_WindowShowStyle.md&amp;value=---%0Auid%3A%20GCore.Sys.Windows.Win32API.WindowShowStyle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore/Sys/Windows/Win32API.cs/#L1630" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

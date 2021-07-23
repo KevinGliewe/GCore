@@ -1,0 +1,748 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseTextControl
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseTextControl
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl">
+  
+  
+  <h1 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl" class="text-break">Class BaseTextControl
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.MarshalByRefObject</span></div>
+    <div class="level2"><span class="xref">System.ComponentModel.Component</span></div>
+    <div class="level3"><a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.NodeControl.html">NodeControl</a></div>
+    <div class="level4"><a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.BindableControl.html">BindableControl</a></div>
+    <div class="level5"><a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html">EditableControl</a></div>
+    <div class="level6"><span class="xref">BaseTextControl</span></div>
+      <div class="level7"><a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.NodeComboBox.html">NodeComboBox</a></div>
+      <div class="level7"><a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.NodeTextBox.html">NodeTextBox</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.IComponent</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_EditEnabled">EditableControl.EditEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_SetEditorBounds_GCore_WinForms_Controls_Tree_EditorContext_">EditableControl.SetEditorBounds(EditorContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_CalculateEditorSize_GCore_WinForms_Controls_Tree_EditorContext_">EditableControl.CalculateEditorSize(EditorContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_CanEdit_GCore_WinForms_Controls_Tree_TreeNodeAdv_">EditableControl.CanEdit(TreeNodeAdv)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_BeginEdit">EditableControl.BeginEdit()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_EndEdit_System_Boolean_">EditableControl.EndEdit(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_UpdateEditor_System_Windows_Forms_Control_">EditableControl.UpdateEditor(Control)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_DoApplyChanges_GCore_WinForms_Controls_Tree_TreeNodeAdv_">EditableControl.DoApplyChanges(TreeNodeAdv)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_CreateEditor_GCore_WinForms_Controls_Tree_TreeNodeAdv_">EditableControl.CreateEditor(TreeNodeAdv)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_MouseDown_GCore_WinForms_Controls_Tree_TreeNodeAdvMouseEventArgs_">EditableControl.MouseDown(TreeNodeAdvMouseEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_MouseUp_GCore_WinForms_Controls_Tree_TreeNodeAdvMouseEventArgs_">EditableControl.MouseUp(TreeNodeAdvMouseEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_MouseDoubleClick_GCore_WinForms_Controls_Tree_TreeNodeAdvMouseEventArgs_">EditableControl.MouseDoubleClick(TreeNodeAdvMouseEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_EditorShowing">EditableControl.EditorShowing</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_OnEditorShowing_System_ComponentModel_CancelEventArgs_">EditableControl.OnEditorShowing(CancelEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_EditorHided">EditableControl.EditorHided</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_OnEditorHided">EditableControl.OnEditorHided()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.BindableControl.html#GCore_WinForms_Controls_Tree_NodeControls_BindableControl_DataPropertyName">BindableControl.DataPropertyName</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.BindableControl.html#GCore_WinForms_Controls_Tree_NodeControls_BindableControl_GetValue_GCore_WinForms_Controls_Tree_TreeNodeAdv_">BindableControl.GetValue(TreeNodeAdv)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.BindableControl.html#GCore_WinForms_Controls_Tree_NodeControls_BindableControl_SetValue_GCore_WinForms_Controls_Tree_TreeNodeAdv_System_Object_">BindableControl.SetValue(TreeNodeAdv, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.BindableControl.html#GCore_WinForms_Controls_Tree_NodeControls_BindableControl_GetPropertyType_GCore_WinForms_Controls_Tree_TreeNodeAdv_">BindableControl.GetPropertyType(TreeNodeAdv)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.BindableControl.html#GCore_WinForms_Controls_Tree_NodeControls_BindableControl_ToString">BindableControl.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.NodeControl.html#GCore_WinForms_Controls_Tree_NodeControls_NodeControl_Parent">NodeControl.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.NodeControl.html#GCore_WinForms_Controls_Tree_NodeControls_NodeControl_ToolTipProvider">NodeControl.ToolTipProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.NodeControl.html#GCore_WinForms_Controls_Tree_NodeControls_NodeControl_Column">NodeControl.Column</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.NodeControl.html#GCore_WinForms_Controls_Tree_NodeControls_NodeControl_GetToolTip_GCore_WinForms_Controls_Tree_TreeNodeAdv_">NodeControl.GetToolTip(TreeNodeAdv)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.NodeControl.html#GCore_WinForms_Controls_Tree_NodeControls_NodeControl_KeyDown_System_Windows_Forms_KeyEventArgs_">NodeControl.KeyDown(KeyEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.NodeControl.html#GCore_WinForms_Controls_Tree_NodeControls_NodeControl_KeyUp_System_Windows_Forms_KeyEventArgs_">NodeControl.KeyUp(KeyEventArgs)</a>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.GetService(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.CanRaiseEvents</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.Container</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.DesignMode</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.Events</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.Site</span>
+    </div>
+    <div>
+      <span class="xref">System.ComponentModel.Component.Disposed</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.CreateObjRef(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.GetLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.InitializeLifetimeService()</span>
+    </div>
+    <div>
+      <span class="xref">System.MarshalByRefObject.MemberwiseClone(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.html">GCore.WinForms.Controls.Tree.NodeControls</a></h6>
+  <h6><strong>Assembly</strong>: GCore.WinForms.dll</h6>
+  <h5 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseTextControl : EditableControl, IComponent, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl__ctor.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/Tree/NodeControls/BaseTextControl.cs/#L61">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl__ctor_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.#ctor*"></a>
+  <h4 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl__ctor" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.#ctor">BaseTextControl()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BaseTextControl()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_Font.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.Font%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/Tree/NodeControls/BaseTextControl.cs/#L20">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_Font_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.Font*"></a>
+  <h4 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_Font" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.Font">Font</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Font Font { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Font</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_TextAlign.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.TextAlign%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/Tree/NodeControls/BaseTextControl.cs/#L44">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_TextAlign_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.TextAlign*"></a>
+  <h4 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_TextAlign" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.TextAlign">TextAlign</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HorizontalAlignment TextAlign { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.Forms.HorizontalAlignment</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_Trimming.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.Trimming%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/Tree/NodeControls/BaseTextControl.cs/#L52">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_Trimming_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.Trimming*"></a>
+  <h4 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_Trimming" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.Trimming">Trimming</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringTrimming Trimming { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.StringTrimming</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/Tree/NodeControls/BaseTextControl.cs/#L152">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_Dispose_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.Dispose*"></a>
+  <h4 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_Dispose_System_Boolean_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.EditableControl.html#GCore_WinForms_Controls_Tree_NodeControls_EditableControl_Dispose_System_Boolean_">EditableControl.Dispose(Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_Draw_GCore_WinForms_Controls_Tree_TreeNodeAdv_GCore_WinForms_Controls_Tree_DrawContext_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.Draw(GCore.WinForms.Controls.Tree.TreeNodeAdv%2CGCore.WinForms.Controls.Tree.DrawContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/Tree/NodeControls/BaseTextControl.cs/#L89">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_Draw_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.Draw*"></a>
+  <h4 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_Draw_GCore_WinForms_Controls_Tree_TreeNodeAdv_GCore_WinForms_Controls_Tree_DrawContext_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.Draw(GCore.WinForms.Controls.Tree.TreeNodeAdv,GCore.WinForms.Controls.Tree.DrawContext)">Draw(TreeNodeAdv, DrawContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Draw(TreeNodeAdv node, DrawContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.Tree.TreeNodeAdv.html">TreeNodeAdv</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.Tree.DrawContext.html">DrawContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.NodeControl.html#GCore_WinForms_Controls_Tree_NodeControls_NodeControl_Draw_GCore_WinForms_Controls_Tree_TreeNodeAdv_GCore_WinForms_Controls_Tree_DrawContext_">NodeControl.Draw(TreeNodeAdv, DrawContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_GetLabel_GCore_WinForms_Controls_Tree_TreeNodeAdv_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.GetLabel(GCore.WinForms.Controls.Tree.TreeNodeAdv)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/Tree/NodeControls/BaseTextControl.cs/#L131">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_GetLabel_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.GetLabel*"></a>
+  <h4 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_GetLabel_GCore_WinForms_Controls_Tree_TreeNodeAdv_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.GetLabel(GCore.WinForms.Controls.Tree.TreeNodeAdv)">GetLabel(TreeNodeAdv)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetLabel(TreeNodeAdv node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.Tree.TreeNodeAdv.html">TreeNodeAdv</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_GetLabelSize_GCore_WinForms_Controls_Tree_TreeNodeAdv_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.GetLabelSize(GCore.WinForms.Controls.Tree.TreeNodeAdv)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/Tree/NodeControls/BaseTextControl.cs/#L75">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_GetLabelSize_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.GetLabelSize*"></a>
+  <h4 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_GetLabelSize_GCore_WinForms_Controls_Tree_TreeNodeAdv_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.GetLabelSize(GCore.WinForms.Controls.Tree.TreeNodeAdv)">GetLabelSize(TreeNodeAdv)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Size GetLabelSize(TreeNodeAdv node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.Tree.TreeNodeAdv.html">TreeNodeAdv</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_GetLabelSize_System_String_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.GetLabelSize(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/Tree/NodeControls/BaseTextControl.cs/#L80">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_GetLabelSize_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.GetLabelSize*"></a>
+  <h4 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_GetLabelSize_System_String_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.GetLabelSize(System.String)">GetLabelSize(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Size GetLabelSize(string label)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_MeasureSize_GCore_WinForms_Controls_Tree_TreeNodeAdv_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.MeasureSize(GCore.WinForms.Controls.Tree.TreeNodeAdv)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/Tree/NodeControls/BaseTextControl.cs/#L70">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_MeasureSize_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.MeasureSize*"></a>
+  <h4 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_MeasureSize_GCore_WinForms_Controls_Tree_TreeNodeAdv_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.MeasureSize(GCore.WinForms.Controls.Tree.TreeNodeAdv)">MeasureSize(TreeNodeAdv)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Size MeasureSize(TreeNodeAdv node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.Tree.TreeNodeAdv.html">TreeNodeAdv</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GCore.WinForms.Controls.Tree.NodeControls.NodeControl.html#GCore_WinForms_Controls_Tree_NodeControls_NodeControl_MeasureSize_GCore_WinForms_Controls_Tree_TreeNodeAdv_">NodeControl.MeasureSize(TreeNodeAdv)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_SetLabel_GCore_WinForms_Controls_Tree_TreeNodeAdv_System_String_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.SetLabel(GCore.WinForms.Controls.Tree.TreeNodeAdv%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/Tree/NodeControls/BaseTextControl.cs/#L147">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_SetLabel_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.SetLabel*"></a>
+  <h4 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_SetLabel_GCore_WinForms_Controls_Tree_TreeNodeAdv_System_String_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.SetLabel(GCore.WinForms.Controls.Tree.TreeNodeAdv,System.String)">SetLabel(TreeNodeAdv, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetLabel(TreeNodeAdv node, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.WinForms.Controls.Tree.TreeNodeAdv.html">TreeNodeAdv</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_ShouldSerializeFont.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.ShouldSerializeFont%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/Tree/NodeControls/BaseTextControl.cs/#L38">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_ShouldSerializeFont_" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.ShouldSerializeFont*"></a>
+  <h4 id="GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl_ShouldSerializeFont" data-uid="GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl.ShouldSerializeFont">ShouldSerializeFont()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool ShouldSerializeFont()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.IComponent</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GCore.Extensions.Class.ClassExtensions.html#GCore_Extensions_Class_ClassExtensions_ThrowIfArgumentIsNull__1___0_System_String_">ClassExtensions.ThrowIfArgumentIsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.EnumEx.EnumExtensions.html#GCore_Extensions_EnumEx_EnumExtensions_Flag__1___0___0_">EnumExtensions.Flag&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_Serialize__1___0_GCore_Extensions_SerializingEx_SerializingExtensions_Serializer_">SerializingExtensions.Serialize&lt;T&gt;(T, SerializingExtensions.Serializer)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeBinary__1___0_">SerializingExtensions.SerializeBinary&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeSoap__1___0_">SerializingExtensions.SerializeSoap&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeXML__1___0_System_Boolean_">SerializingExtensions.SerializeXML&lt;T&gt;(T, Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/new/54ed62aa95084f75441dcf85d50565a594957025/apiSpec/new?filename=GCore_WinForms_Controls_Tree_NodeControls_BaseTextControl.md&amp;value=---%0Auid%3A%20GCore.WinForms.Controls.Tree.NodeControls.BaseTextControl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/54ed62aa95084f75441dcf85d50565a594957025/src/GCore.WinForms/Controls/Tree/NodeControls/BaseTextControl.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
