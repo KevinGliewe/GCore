@@ -46,31 +46,36 @@ namespace GCore.Test.Extensions.DataTableEx
         <tr>
             <td>John</td>
             <td>41</td>
-            <td>01.01.1980 00:00:00</td>
+            <td>01.01.1980</td>
         </tr>
         <tr>
             <td>Jane</td>
             <td>42</td>
-            <td>02.06.1978 00:00:00</td>
+            <td>02.06.1978</td>
         </tr>
         <tr>
             <td>Bob</td>
             <td>31</td>
-            <td>03.08.1989 00:00:00</td>
+            <td>03.08.1989</td>
         </tr>
         <tr>
             <td>Sally</td>
             <td>21</td>
-            <td>04.03.1999 00:00:00</td>
+            <td>04.03.1999</td>
         </tr>
         <tr>
             <td>Tim</td>
             <td>36</td>
-            <td>05.01.1985 00:00:00</td>
+            <td>05.01.1985</td>
         </tr>
     </tbody>
 </table>
-            "), Normalize(table.ToHtmlTable()));
+            "), Normalize(table.ToHtmlTable(formatter: (r, c) => {
+                var v = r[c];
+                if (v is DateTime vd)
+                    return vd.ToString("dd.MM.yyyy");
+                return v.ToString();
+            })));
         }
     }
 }
