@@ -27,7 +27,7 @@ jobs:
 
       - name: Deploy Nuget
         run: |
-          dotnet nuget push pack/*.nupkg -s nuget.org -k ${{ secrets.NUGET_TOKEN }}
+          dotnet nuget push pack\*.nupkg -s nuget.org -k ${{ secrets.NUGET_TOKEN }}
         
       - uses: nikeee/docfx-action@v1.0.0
         name: Build Documentation
