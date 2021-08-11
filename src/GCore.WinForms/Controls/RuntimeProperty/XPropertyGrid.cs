@@ -43,17 +43,11 @@ namespace GCore.WinForms.Controls.RuntimeProperty
             InitializeComponent();
         }
 
-#if NET2
         private ContextMenuStrip contextMenu;
         private ToolStripMenuItem selectThisItem;
         private ToolStripMenuItem goBackOneItem;
         private ToolStripMenuItem goForwardOneItem;
-#else
-        private ContextMenu contextMenu;
-        private MenuItem selectThisItem;
-        private MenuItem goBackOneItem;
-        private MenuItem goForwardOneItem;
-#endif
+
         private ArrayList historyObjects = new ArrayList();
 
         private int activeObject = -1;
@@ -100,8 +94,6 @@ namespace GCore.WinForms.Controls.RuntimeProperty
         #endregion
 
         #region Context Menu
-
-#if NET2
         private void InitContextMenu()
         {
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -145,22 +137,6 @@ namespace GCore.WinForms.Controls.RuntimeProperty
             this.contextMenu.ResumeLayout(false);
         }
 
-#else
-        private void InitContextMenu()
-        {
-            contextMenu = new ContextMenu();
-            goBackOneItem = new MenuItem("Back");
-            goForwardOneItem = new MenuItem("Forward");
-            selectThisItem = new MenuItem("Select");
-
-            selectThisItem.Click += new EventHandler(selectThisItem_Click);
-            goBackOneItem.Click += new EventHandler(goBackOneItem_Click);
-            goForwardOneItem.Click += new EventHandler(goForwardOneItem_Click);
-
-            contextMenu.MenuItems.AddRange(new MenuItem[] {selectThisItem, goBackOneItem, goForwardOneItem});
-        }
-#endif
-
         #endregion
 
         #region Properties
@@ -187,11 +163,8 @@ namespace GCore.WinForms.Controls.RuntimeProperty
 
             InitContextMenu();
 
-#if NET2
             this.ContextMenuStrip = this.contextMenu;
-#else
-            this.ContextMenu = this.contextMenu;
-#endif
+
             goBackOneItem.Enabled = false;
             goForwardOneItem.Enabled = false;
 

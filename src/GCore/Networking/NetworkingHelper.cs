@@ -94,5 +94,91 @@ namespace GCore.Networking {
             return client.DownloadString(url);
         }
 
+        public static bool IsLocalIpAddress(string host)
+        {
+            try
+            { // get host IP addresses
+                IPAddress[] hostIPs = Dns.GetHostAddresses(host);
+                // get local IP addresses
+                IPAddress[] localIPs = Dns.GetHostAddresses(Dns.GetHostName());
+
+                // test if any host IP equals to any local IP or to localhost
+                foreach (IPAddress hostIP in hostIPs)
+                {
+                    // is localhost
+                    if (IPAddress.IsLoopback(hostIP)) return true;
+                    // is local address
+                    foreach (IPAddress localIP in localIPs)
+                    {
+                        if (hostIP.Equals(localIP)) return true;
+                    }
+                }
+            }
+            catch { }
+            return false;
+        }
+
+        public static IEnumerable<string> GetLocalAddresses() =>
+            Dns.GetHostAddresses(Dns.GetHostName()).Select(h => h.ToString());
+
+        public static string GetLocalAddress()
+        {
+            var shortest = "####################################################################";
+
+            foreach (var localAddress in GetLocalAddresses())
+            {
+                if (localAddress.Length < shortest.Length)
+                    shortest = localAddress;
+            }
+
+            return shortest;
+        }
+
+
+        public static bool TryParseIpAddress(string ipString, out IPAddress ipAddress)
+        {
+            if (ipString == "*")
+            {
+                ipAddress = IPAddress.Any;
+                return true;
+            }
+            else if (ipString.ToLower() == "any")
+            {
+                ipAddress = IPAddress.Any;
+                return true;
+            }
+            else if (ipString.ToLower() == "broadcast")
+            {
+                ipAddress = IPAddress.Broadcast;
+                return true;
+            }
+            else if (ipString.ToLower() == "ipv6any")
+            {
+                ipAddress = IPAddress.IPv6Any;
+                return true;
+            }
+            else if (ipString.ToLower() == "ipv6loopback")
+            {
+                ipAddress = IPAddress.IPv6Loopback;
+                return true;
+            }
+            else if (ipString.ToLower() == "ipv6none")
+            {
+                ipAddress = IPAddress.IPv6None;
+                return true;
+            }
+            else if (ipString.ToLower() == "loopback")
+            {
+                ipAddress = IPAddress.Loopback;
+                return true;
+            }
+            else if (ipString.ToLower() == "none")
+            {
+                ipAddress = IPAddress.None;
+                return true;
+            }
+
+            return IPAddress.TryParse(ipString, out ipAddress);
+        }
     }
 }
