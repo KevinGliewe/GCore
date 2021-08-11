@@ -28,17 +28,3 @@ jobs:
       - name: Deploy Nuget
         run: |
           dotnet nuget push pack\*.nupkg -s nuget.org -k ${{ secrets.NUGET_TOKEN }}
-        
-      - uses: nikeee/docfx-action@v1.0.0
-        name: Build Documentation
-        with:
-          args: doc/docfx/docfx.json
-        
-      - name: Deploy GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@3.5.9
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: doc/docfx/_site
-        env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
