@@ -6,7 +6,21 @@ using System.Text.RegularExpressions;
 namespace GCore.Extensions.StringShEx {
     public static class StringShExtensions {
 
-        public static string Sh(this string cmd, string workingDirectory = ".", bool redirectStandardError = true) {
+        public class ReturnCodeException : Exception {
+            public int ReturnCode { get; private set; }
+
+            public string Command { get; private set; }
+
+            public string Output { get; private set; }
+
+            public ReturnCodeException(int returnCode, string command, string output) {
+                ReturnCode = returnCode;
+                Command = command;
+                Output = output;
+            }
+        }
+
+        public static string Sh(this string cmd, string workingDirectory = ".", bool redirectStandardError = true, bool throwOnError = false) {
             var escapedArgs = cmd.Replace("\"", "\\\"");
 
             var fileName = "/bin/bash";
@@ -31,6 +45,11 @@ namespace GCore.Extensions.StringShEx {
             process.Start();
             var stdOut = process.StandardOutput.ReadToEnd();
             process.WaitForExit();
+
+            if(throwOnError && process.ExitCode != 0) {
+                throw new ReturnCodeException(process.ExitCode, cmd, stdOut);
+            }
+
             return stdOut;
         }
 
