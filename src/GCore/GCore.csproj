@@ -13,8 +13,4 @@
   <ItemGroup>
     <DotNetCliToolReference Include="ProjectVersioning.DotNet.Cli" Version="3.0.1" />
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.CodeDom" Version="4.6.0" />
-  </ItemGroup>
 </Project>

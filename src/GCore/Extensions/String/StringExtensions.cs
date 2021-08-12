@@ -6,8 +6,6 @@ using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Security.Cryptography;
-using System.CodeDom;
-using System.CodeDom.Compiler;
 using GCore.Data.Coding;
 
 namespace GCore.Extensions.StringEx {
