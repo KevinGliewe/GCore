@@ -31,13 +31,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Bump version and push tag/create release point
-        uses: anothrNick/github-tag-action@1.17.2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          WITH_V: false
-        id: bump_version
-
       - name: setup python
         uses: actions/setup-python@v2
         with:

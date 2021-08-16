@@ -15,11 +15,11 @@ if len(sys.argv) > 1:
 find = "<VersionPrefix>0.0.0</VersionPrefix>"
 replace = f"<VersionPrefix>{version}</VersionPrefix>"
 
-print(f"Updating version in {cargo_file}")
+print(f"Updating version in {props_file}")
 print(f"  from {find} to {replace}")
 
 
 
-with fileinput.FileInput(cargo_file, inplace=True, backup='.bak') as file:
+with fileinput.FileInput(props_file, inplace=True, backup='.bak') as file:
     for line in file:
         print(line.replace(find, replace), end='')
