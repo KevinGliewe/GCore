@@ -6,8 +6,25 @@ on:
       - master
 
 jobs:
+  bump:
+    name: Bump tag version
+    runs-on: ubuntu-latest
+    outputs:
+      newtag: ${{ steps.bump_version.outputs.new_tag }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v
+
+      - name: Bump version and push tag/create release point
+        uses: anothrNick/github-tag-action@1.17.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: false
+        id: bump_version
+
   build:
     runs-on: windows-latest
+    needs: bump
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.3
@@ -27,7 +44,7 @@ jobs:
           python-version: '3.7.9'
 
       - name: Update Version
-        run: python scripts/update_version.py "${{ steps.bump_version.outputs.new_tag }}"
+        run: python scripts/update_version.py "${{ needs.bump.outputs.newtag }}"
 
       - name: Install .NET (v5.0)
         uses: actions/setup-dotnet@v1.7.2
@@ -52,7 +69,7 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: pack\*.nupkg
-          tag: ${{ steps.bump_version.outputs.new_tag }}
+          tag: ${{ needs.bump.outputs.newtag }}
           overwrite: true
           file_glob: true
 
