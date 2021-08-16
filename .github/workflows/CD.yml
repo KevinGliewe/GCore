@@ -2,18 +2,32 @@ name: CD
 
 on:
   push:
-    tags:
-      - "*"
+    branches:
+      - master
 
 jobs:
   build:
     runs-on: windows-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.3
         with:
           fetch-depth: 0
+
+      - name: Bump version and push tag/create release point
+        uses: anothrNick/github-tag-action@1.17.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: false
+        id: bump_version
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7.9'
+
+      - name: Update Version
+        run: python scripts/update_version.py "${{ steps.bump_version.outputs.new_tag }}"
 
       - name: Install .NET (v5.0)
         uses: actions/setup-dotnet@v1.7.2
@@ -25,6 +39,40 @@ jobs:
           dotnet nuget locals all --clear
           dotnet pack --configuration Release --output pack
 
+      - name: Deploy GitHub-Nuget
+        run: |
+          dotnet nuget push pack\*.nupkg --source github --api-key ${{ secrets.GITHUB_TOKEN }}
+
       - name: Deploy Nuget
         run: |
-          dotnet nuget push pack\*.nupkg -s nuget.org -k ${{ secrets.NUGET_TOKEN }}
+          dotnet nuget push pack\*.nupkg ---source nuget.org --api-key ${{ secrets.NUGET_TOKEN }}
+
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: pack\*.nupkg
+          tag: ${{ steps.bump_version.outputs.new_tag }}
+          overwrite: true
+          file_glob: true
+
+  doc:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.3
+        
+      - uses: nikeee/docfx-action@v1.0.0
+        name: Build Documentation
+        with:
+          args: doc/docfx/docfx.json
+        
+      - name: Deploy GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.5.9
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: doc/docfx/_site
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
