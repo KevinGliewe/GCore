@@ -51,11 +51,11 @@ jobs:
 
       - name: Deploy GitHub-Nuget
         run: |
-          dotnet nuget push pack\*.nupkg --source github --api-key ${{ secrets.GITHUB_TOKEN }}
+          dotnet nuget push pack\*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
 
       - name: Deploy Nuget
         run: |
-          dotnet nuget push pack\*.nupkg ---source nuget.org --api-key ${{ secrets.NUGET_TOKEN }}
+          dotnet nuget push pack\*.nupkg --api-key ${{ secrets.NUGET_TOKEN }} --source nuget.org
 
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
