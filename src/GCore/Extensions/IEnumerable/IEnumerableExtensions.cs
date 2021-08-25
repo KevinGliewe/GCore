@@ -413,5 +413,13 @@ namespace GCore.Extensions.IEnumerableEx {
             return false;
         }
 
+
+        public static IEnumerable<Tuple<T, int, bool>> IterIndexLast<T>(this IEnumerable<T> source)
+        {
+            var arr = source.ToArray();
+
+            for (int i = 0; i < arr.Length; i++)
+                yield return new Tuple<T, int, bool>(arr[i], i, i == arr.Length - 1);
+        }
     }
 }
