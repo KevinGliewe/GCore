@@ -16,7 +16,7 @@ namespace GCore.Logging {
 
 
 
-        private static void DoLog(LogEntry.LogTypes logType, DateTime timeStamp, string message, StackTrace stacktrace, object[] oparams, Exception exception) {
+        public static void DoLog(LogEntry.LogTypes logType, DateTime timeStamp, string message, StackTrace stacktrace, object[] oparams, Exception exception) {
             DoLog(new LogEntry(
                     logType,
                     timeStamp,
@@ -28,7 +28,7 @@ namespace GCore.Logging {
                 ));
         }
 
-        private static void DoLog(LogEntry logEntry) {
+        public static void DoLog(LogEntry logEntry) {
             Task.Run(() =>
             {
                 if (OnLog != null)
