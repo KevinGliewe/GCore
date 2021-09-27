@@ -109,6 +109,52 @@ namespace GCore.Extensions.StringShEx {
             return process.ExitCode;
         }
 
+        public static int Sh3(this string cmd, DataReceivedEventHandler dataReceivedHandler = null)
+        {
+            ProcessStartInfo processStartInfo;
+            Process process;
+
+            var escapedArgs = cmd.Replace("\"", "\\\"");
+
+            var fileName = "/bin/bash";
+            var arguments = $"-c \"{escapedArgs}\"";
+
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                fileName = "cmd.exe";
+                arguments = $"/C \"{escapedArgs}\"";
+            }
+
+            dataReceivedHandler ??= (object sender, DataReceivedEventArgs e) =>
+            {
+                Console.WriteLine(e.Data);
+            };
+
+            processStartInfo = new ProcessStartInfo();
+            processStartInfo.CreateNoWindow = true;
+            processStartInfo.RedirectStandardOutput = true;
+            processStartInfo.RedirectStandardInput = true;
+            processStartInfo.RedirectStandardError = true;
+            processStartInfo.UseShellExecute = false;
+            processStartInfo.Arguments = arguments;
+            processStartInfo.FileName = fileName;
+
+            process = new Process();
+            process.StartInfo = processStartInfo;
+
+            process.EnableRaisingEvents = true;
+            process.OutputDataReceived += dataReceivedHandler;
+            process.ErrorDataReceived += dataReceivedHandler;
+
+            process.Start();
+            process.BeginOutputReadLine();
+            process.BeginErrorReadLine();
+            process.WaitForExit();
+            process.CancelOutputRead();
+
+            return process.ExitCode;
+        }
+
 
         public static Version ExtractVersion(this string self) {
             var match = Regex.Match(self, @"^.*(\d+)\.(\d+)\.(\d+).*$");
