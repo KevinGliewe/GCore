@@ -109,7 +109,7 @@ namespace GCore.Extensions.StringShEx {
             return process.ExitCode;
         }
 
-        public static int Sh3(this string cmd, DataReceivedEventHandler dataReceivedHandler = null)
+        public static int Sh3(this string cmd, DataReceivedEventHandler dataReceivedHandler = null, bool exceptionOnReturnNEZero = false)
         {
             ProcessStartInfo processStartInfo;
             Process process;
@@ -152,6 +152,8 @@ namespace GCore.Extensions.StringShEx {
             process.WaitForExit();
             process.CancelOutputRead();
 
+            if (exceptionOnReturnNEZero && process.ExitCode != 0)
+                throw new ReturnCodeException(process.ExitCode, cmd, null);
             return process.ExitCode;
         }
 
