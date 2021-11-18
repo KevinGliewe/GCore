@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace GCore.Attributes
+    <title>Interface INamedValued&lt;TVal&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace GCore.Attributes
+    <meta name="title" content="Interface INamedValued&lt;TVal&gt;
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -68,24 +68,62 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="GCore.Attributes">
+            <article class="content wrap" id="_content" data-uid="GCore.Data.INamedValued`1">
   
-  <h1 id="GCore_Attributes" data-uid="GCore.Attributes" class="text-break">Namespace GCore.Attributes
+  
+  <h1 id="GCore_Data_INamedValued_1" data-uid="GCore.Data.INamedValued`1" class="text-break">Interface INamedValued&lt;TVal&gt;
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="GCore.Attributes.DAttribute.html">DAttribute</a></h4>
-      <section><p>Dynamic attribute to create generic attributes.</p>
-<p>Example:</p>
-<pre><code>[D(typeof(List&lt;int>), new int[] {1, 2, 3})]
-[D(&quot;AttributeName&quot;, typeof(List&lt;int>), new int[] {1, 2, 3})]</code></pre>
-</section>
-      <h4><a class="xref" href="GCore.Attributes.StringValueAttribute.html">StringValueAttribute</a></h4>
-      <section><p><a href="http://www.codeproject.com/Articles/11130/String-Enumerations-in-C">http://www.codeproject.com/Articles/11130/String-Enumerations-in-C</a></p>
-</section>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GCore.Data.INamed.html#GCore_Data_INamed_Name">INamed.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.IValued-1.html#GCore_Data_IValued_1_Value">IValued&lt;TVal&gt;.Value</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Data.html">GCore.Data</a></h6>
+  <h6><strong>Assembly</strong>: GCore.dll</h6>
+  <h5 id="GCore_Data_INamedValued_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface INamedValued&lt;TVal&gt; : INamed, IValued&lt;TVal&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TVal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GCore.Extensions.Class.ClassExtensions.html#GCore_Extensions_Class_ClassExtensions_ThrowIfArgumentIsNull__1___0_System_String_">ClassExtensions.ThrowIfArgumentIsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.EnumEx.EnumExtensions.html#GCore_Extensions_EnumEx_EnumExtensions_Flag__1___0___0_">EnumExtensions.Flag&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_Serialize__1___0_GCore_Extensions_SerializingEx_SerializingExtensions_Serializer_">SerializingExtensions.Serialize&lt;T&gt;(T, SerializingExtensions.Serializer)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeBinary__1___0_">SerializingExtensions.SerializeBinary&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeSoap__1___0_">SerializingExtensions.SerializeSoap&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeXML__1___0_System_Boolean_">SerializingExtensions.SerializeXML&lt;T&gt;(T, Boolean)</a>
+  </div>
 </article>
           </div>
           
@@ -93,6 +131,12 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_INamedValued_1.md&amp;value=---%0Auid%3A%20GCore.Data.INamedValued%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/INamedValued.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
