@@ -10,7 +10,7 @@ namespace GCore.Attributes
     /// <summary>
     /// http://www.codeproject.com/Articles/11130/String-Enumerations-in-C
     /// </summary>
-    public class StringValueAttribute : System.Attribute
+    public class StringValueAttribute : System.Attribute, Data.IValued<string>
     {
 
         private string _value;
