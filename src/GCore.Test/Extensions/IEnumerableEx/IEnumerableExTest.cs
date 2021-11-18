@@ -24,5 +24,19 @@ namespace GCore.Test.Extensions.IEnumerableEx
             Assert.Equal(1, data2.Slice(1, -1).ToArr()[0]);
             Assert.Equal(4, data5.Slice(1, -1).ToArr()[3]);
         }
+
+        [Fact]
+        public void Test_IterIndexLast()
+        {
+            int[] data = new int[] { 0, 1, 2, 3, 4 };
+            int i = 0;
+            foreach (var (value, index, last) in data.IterIndexLast())
+            {
+                Assert.Equal(data[i], value);
+                Assert.Equal(i, index);
+                Assert.Equal(data.Length - 1 == i, last);
+                i++;
+            }
+        }
     }
 }

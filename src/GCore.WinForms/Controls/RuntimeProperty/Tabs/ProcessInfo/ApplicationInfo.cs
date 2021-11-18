@@ -19,7 +19,6 @@
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Runtime.Remoting.Contexts;
 using System.Security.Principal;
 using System.Threading;
 using System.Windows.Forms;
@@ -55,13 +54,7 @@ namespace GCore.WinForms.Controls.RuntimeProperty.Tabs.ProcessInfo
 
 		#region Thread
 
-		[Category("Thread")]
-		public Context CurrentContext
-		{
-			get { return Thread.CurrentContext; }
-		}
-
-		[Category("Thread")]
+        [Category("Thread")]
 		public IPrincipal CurrentPrincipal
 		{
 			get { return Thread.CurrentPrincipal; }

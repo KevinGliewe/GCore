@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\Lib.Build.props" />
+  
+  <ItemGroup>
+    <PackageReference Include="ExpressionTreeToString" Version="3.4.65" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GCore\GCore.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -6,7 +6,21 @@ using System.Text.RegularExpressions;
 namespace GCore.Extensions.StringShEx {
     public static class StringShExtensions {
 
-        public static string Sh(this string cmd, string workingDirectory = ".", bool redirectStandardError = true) {
+        public class ReturnCodeException : Exception {
+            public int ReturnCode { get; private set; }
+
+            public string Command { get; private set; }
+
+            public string Output { get; private set; }
+
+            public ReturnCodeException(int returnCode, string command, string output) {
+                ReturnCode = returnCode;
+                Command = command;
+                Output = output;
+            }
+        }
+
+        public static string Sh(this string cmd, string workingDirectory = ".", bool redirectStandardError = true, bool throwOnError = false) {
             var escapedArgs = cmd.Replace("\"", "\\\"");
 
             var fileName = "/bin/bash";
@@ -31,6 +45,11 @@ namespace GCore.Extensions.StringShEx {
             process.Start();
             var stdOut = process.StandardOutput.ReadToEnd();
             process.WaitForExit();
+
+            if(throwOnError && process.ExitCode != 0) {
+                throw new ReturnCodeException(process.ExitCode, cmd, stdOut);
+            }
+
             return stdOut;
         }
 
@@ -87,6 +106,54 @@ namespace GCore.Extensions.StringShEx {
             while ((line = process.StandardOutput.ReadLine()) != null)
                 GCore.Logging.Log.Info($"Process {process.Id}: {line}");
             process.WaitForExit();
+            return process.ExitCode;
+        }
+
+        public static int Sh3(this string cmd, DataReceivedEventHandler dataReceivedHandler = null, bool exceptionOnReturnNEZero = false)
+        {
+            ProcessStartInfo processStartInfo;
+            Process process;
+
+            var escapedArgs = cmd.Replace("\"", "\\\"");
+
+            var fileName = "/bin/bash";
+            var arguments = $"-c \"{escapedArgs}\"";
+
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                fileName = "cmd.exe";
+                arguments = $"/C \"{escapedArgs}\"";
+            }
+
+            dataReceivedHandler ??= (object sender, DataReceivedEventArgs e) =>
+            {
+                Console.WriteLine(e.Data);
+            };
+
+            processStartInfo = new ProcessStartInfo();
+            processStartInfo.CreateNoWindow = true;
+            processStartInfo.RedirectStandardOutput = true;
+            processStartInfo.RedirectStandardInput = true;
+            processStartInfo.RedirectStandardError = true;
+            processStartInfo.UseShellExecute = false;
+            processStartInfo.Arguments = arguments;
+            processStartInfo.FileName = fileName;
+
+            process = new Process();
+            process.StartInfo = processStartInfo;
+
+            process.EnableRaisingEvents = true;
+            process.OutputDataReceived += dataReceivedHandler;
+            process.ErrorDataReceived += dataReceivedHandler;
+
+            process.Start();
+            process.BeginOutputReadLine();
+            process.BeginErrorReadLine();
+            process.WaitForExit();
+            process.CancelOutputRead();
+
+            if (exceptionOnReturnNEZero && process.ExitCode != 0)
+                throw new ReturnCodeException(process.ExitCode, cmd, null);
             return process.ExitCode;
         }
 
