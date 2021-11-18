@@ -81,11 +81,15 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">StringValueAttribute</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GCore.Data.IValued-1.html">IValued</a>&lt;<span class="xref">System.String</span>&gt;</div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Attributes.html">GCore.Attributes</a></h6>
   <h6><strong>Assembly</strong>: GCore.dll</h6>
   <h5 id="GCore_Attributes_StringValueAttribute_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class StringValueAttribute : System.Attribute</code></pre>
+    <pre><code class="lang-csharp hljs">public class StringValueAttribute : System.Attribute, IValued&lt;string&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -202,6 +206,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GCore.Data.IValued-1.html">IValued&lt;T&gt;</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="GCore.Extensions.Class.ClassExtensions.html#GCore_Extensions_Class_ClassExtensions_ThrowIfArgumentIsNull__1___0_System_String_">ClassExtensions.ThrowIfArgumentIsNull&lt;T&gt;(T, String)</a>
