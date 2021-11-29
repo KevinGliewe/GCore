@@ -1,0 +1,1015 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MPackMap
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MPackMap
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GCore.Data.MPack.MPackMap">
+  
+  
+  <h1 id="GCore_Data_MPack_MPackMap" data-uid="GCore.Data.MPack.MPackMap" class="text-break">Class MPackMap
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a></div>
+    <div class="level2"><span class="xref">MPackMap</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IConvertible</span></div>
+    <div><span class="xref">IComparable</span>&lt;<a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>&gt;</div>
+    <div><span class="xref">IDictionary</span>&lt;<a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>, <a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_Item_System_Int32_">MPack.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_Null">MPack.Null()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_From_System_Object_">MPack.From(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_From_System_Object_Type_">MPack.From(Object, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_To_Type_">MPack.To(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_To__1">MPack.To&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_ToOrDefault__1">MPack.ToOrDefault&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_ParseFromBytes_System_Byte___">MPack.ParseFromBytes(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_ParseFromStream_Stream_">MPack.ParseFromStream(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_ParseFromStreamAsync_Stream_">MPack.ParseFromStreamAsync(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_ParseFromStreamAsync_Stream_CancellationToken_">MPack.ParseFromStreamAsync(Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_EncodeToStream_Stream_">MPack.EncodeToStream(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_EncodeToStreamAsync_Stream_">MPack.EncodeToStreamAsync(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_EncodeToStreamAsync_Stream_CancellationToken_">MPack.EncodeToStreamAsync(Stream, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_EncodeToBytes">MPack.EncodeToBytes()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_Equals_GCore_Data_MPack_MPack_">MPack.Equals(MPack)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_Equals_System_Object_">MPack.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_GetHashCode">MPack.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_CompareTo_GCore_Data_MPack_MPack_">MPack.CompareTo(MPack)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Data.MPack.html">GCore.Data.MPack</a></h6>
+  <h6><strong>Assembly</strong>: GCore.dll</h6>
+  <h5 id="GCore_Data_MPack_MPackMap_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MPackMap : MPack, IConvertible, IComparable&lt;MPack&gt;, IDictionary&lt;MPack, MPack&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap__ctor.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L21">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap__ctor_" data-uid="GCore.Data.MPack.MPackMap.#ctor*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap__ctor" data-uid="GCore.Data.MPack.MPackMap.#ctor">MPackMap()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MPackMap()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap__ctor_IDictionary_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack__.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.%23ctor(IDictionary%7BGCore.Data.MPack.MPack%2CGCore.Data.MPack.MPack%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L25">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap__ctor_" data-uid="GCore.Data.MPack.MPackMap.#ctor*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap__ctor_IDictionary_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack__" data-uid="GCore.Data.MPack.MPackMap.#ctor(IDictionary{GCore.Data.MPack.MPack,GCore.Data.MPack.MPack})">MPackMap(IDictionary&lt;MPack, MPack&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MPackMap(IDictionary&lt;MPack, MPack&gt; seed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;<a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>, <a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>&gt;</td>
+        <td><span class="parametername">seed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap__ctor_IEnumerable_KeyValuePair_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack___.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.%23ctor(IEnumerable%7BKeyValuePair%7BGCore.Data.MPack.MPack%2CGCore.Data.MPack.MPack%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L29">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap__ctor_" data-uid="GCore.Data.MPack.MPackMap.#ctor*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap__ctor_IEnumerable_KeyValuePair_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack___" data-uid="GCore.Data.MPack.MPackMap.#ctor(IEnumerable{KeyValuePair{GCore.Data.MPack.MPack,GCore.Data.MPack.MPack}})">MPackMap(IEnumerable&lt;KeyValuePair&lt;MPack, MPack&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MPackMap(IEnumerable&lt;KeyValuePair&lt;MPack, MPack&gt;&gt; seed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>, <a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>&gt;&gt;</td>
+        <td><span class="parametername">seed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_Count.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L12">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_Count_" data-uid="GCore.Data.MPack.MPackMap.Count*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_Count" data-uid="GCore.Data.MPack.MPackMap.Count">Count</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_IsReadOnly.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.IsReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L13">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_IsReadOnly_" data-uid="GCore.Data.MPack.MPackMap.IsReadOnly*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_IsReadOnly" data-uid="GCore.Data.MPack.MPackMap.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_Item_GCore_Data_MPack_MPack_.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.Item(GCore.Data.MPack.MPack)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L36">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_Item_" data-uid="GCore.Data.MPack.MPackMap.Item*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_Item_GCore_Data_MPack_MPack_" data-uid="GCore.Data.MPack.MPackMap.Item(GCore.Data.MPack.MPack)">Item[MPack]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override MPack this[MPack key] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_Item_GCore_Data_MPack_MPack_">MPack.Item[MPack]</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_Keys.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.Keys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L14">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_Keys_" data-uid="GCore.Data.MPack.MPackMap.Keys*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_Keys" data-uid="GCore.Data.MPack.MPackMap.Keys">Keys</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;MPack&gt; Keys { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_Value.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L16">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_Value_" data-uid="GCore.Data.MPack.MPackMap.Value*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_Value" data-uid="GCore.Data.MPack.MPackMap.Value">Value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_Value">MPack.Value</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_Values.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.Values%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L15">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_Values_" data-uid="GCore.Data.MPack.MPackMap.Values*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_Values" data-uid="GCore.Data.MPack.MPackMap.Values">Values</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;MPack&gt; Values { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICollection</span>&lt;<a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_ValueType.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.ValueType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L17">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_ValueType_" data-uid="GCore.Data.MPack.MPackMap.ValueType*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_ValueType" data-uid="GCore.Data.MPack.MPackMap.ValueType">ValueType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override MPackType ValueType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.MPack.MPackType.html">MPackType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_ValueType">MPack.ValueType</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_Add_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack_.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.Add(GCore.Data.MPack.MPack%2CGCore.Data.MPack.MPack)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L78">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_Add_" data-uid="GCore.Data.MPack.MPackMap.Add*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_Add_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack_" data-uid="GCore.Data.MPack.MPackMap.Add(GCore.Data.MPack.MPack,GCore.Data.MPack.MPack)">Add(MPack, MPack)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(MPack key, MPack value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_Add_KeyValuePair_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack__.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.Add(KeyValuePair%7BGCore.Data.MPack.MPack%2CGCore.Data.MPack.MPack%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L50">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_Add_" data-uid="GCore.Data.MPack.MPackMap.Add*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_Add_KeyValuePair_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack__" data-uid="GCore.Data.MPack.MPackMap.Add(KeyValuePair{GCore.Data.MPack.MPack,GCore.Data.MPack.MPack})">Add(KeyValuePair&lt;MPack, MPack&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(KeyValuePair&lt;MPack, MPack&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">KeyValuePair</span>&lt;<a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>, <a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_Clear.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L54">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_Clear_" data-uid="GCore.Data.MPack.MPackMap.Clear*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_Clear" data-uid="GCore.Data.MPack.MPackMap.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_Contains_KeyValuePair_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack__.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.Contains(KeyValuePair%7BGCore.Data.MPack.MPack%2CGCore.Data.MPack.MPack%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L58">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_Contains_" data-uid="GCore.Data.MPack.MPackMap.Contains*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_Contains_KeyValuePair_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack__" data-uid="GCore.Data.MPack.MPackMap.Contains(KeyValuePair{GCore.Data.MPack.MPack,GCore.Data.MPack.MPack})">Contains(KeyValuePair&lt;MPack, MPack&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(KeyValuePair&lt;MPack, MPack&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">KeyValuePair</span>&lt;<a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>, <a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_ContainsKey_GCore_Data_MPack_MPack_.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.ContainsKey(GCore.Data.MPack.MPack)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L70">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_ContainsKey_" data-uid="GCore.Data.MPack.MPackMap.ContainsKey*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_ContainsKey_GCore_Data_MPack_MPack_" data-uid="GCore.Data.MPack.MPackMap.ContainsKey(GCore.Data.MPack.MPack)">ContainsKey(MPack)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsKey(MPack key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_ContainsKeys_IEnumerable_GCore_Data_MPack_MPack__.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.ContainsKeys(IEnumerable%7BGCore.Data.MPack.MPack%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L74">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_ContainsKeys_" data-uid="GCore.Data.MPack.MPackMap.ContainsKeys*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_ContainsKeys_IEnumerable_GCore_Data_MPack_MPack__" data-uid="GCore.Data.MPack.MPackMap.ContainsKeys(IEnumerable{GCore.Data.MPack.MPack})">ContainsKeys(IEnumerable&lt;MPack&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsKeys(IEnumerable&lt;MPack&gt; keys)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>&gt;</td>
+        <td><span class="parametername">keys</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_CopyTo_KeyValuePair_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack____System_Int32_.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.CopyTo(KeyValuePair%7BGCore.Data.MPack.MPack%2CGCore.Data.MPack.MPack%7D%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L62">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_CopyTo_" data-uid="GCore.Data.MPack.MPackMap.CopyTo*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_CopyTo_KeyValuePair_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack____System_Int32_" data-uid="GCore.Data.MPack.MPackMap.CopyTo(KeyValuePair{GCore.Data.MPack.MPack,GCore.Data.MPack.MPack}[],System.Int32)">CopyTo(KeyValuePair&lt;MPack, MPack&gt;[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(KeyValuePair&lt;MPack, MPack&gt;[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">KeyValuePair</span>&lt;<a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>, <a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>&gt;[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_GetEnumerator.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L42">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_GetEnumerator_" data-uid="GCore.Data.MPack.MPackMap.GetEnumerator*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_GetEnumerator" data-uid="GCore.Data.MPack.MPackMap.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;KeyValuePair&lt;MPack, MPack&gt;&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span>&lt;<span class="xref">KeyValuePair</span>&lt;<a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>, <a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_Remove_GCore_Data_MPack_MPack_.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.Remove(GCore.Data.MPack.MPack)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L82">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_Remove_" data-uid="GCore.Data.MPack.MPackMap.Remove*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_Remove_GCore_Data_MPack_MPack_" data-uid="GCore.Data.MPack.MPackMap.Remove(GCore.Data.MPack.MPack)">Remove(MPack)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(MPack key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_Remove_KeyValuePair_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack__.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.Remove(KeyValuePair%7BGCore.Data.MPack.MPack%2CGCore.Data.MPack.MPack%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L66">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_Remove_" data-uid="GCore.Data.MPack.MPackMap.Remove*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_Remove_KeyValuePair_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack__" data-uid="GCore.Data.MPack.MPackMap.Remove(KeyValuePair{GCore.Data.MPack.MPack,GCore.Data.MPack.MPack})">Remove(KeyValuePair&lt;MPack, MPack&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(KeyValuePair&lt;MPack, MPack&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">KeyValuePair</span>&lt;<a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>, <a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a>&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_ToString.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L91">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_ToString_" data-uid="GCore.Data.MPack.MPackMap.ToString*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_ToString" data-uid="GCore.Data.MPack.MPackMap.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="GCore.Data.MPack.MPack.html#GCore_Data_MPack_MPack_ToString">MPack.ToString()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap_TryGetValue_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack__.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap.TryGetValue(GCore.Data.MPack.MPack%2CGCore.Data.MPack.MPack%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L86">View Source</a>
+  </span>
+  <a id="GCore_Data_MPack_MPackMap_TryGetValue_" data-uid="GCore.Data.MPack.MPackMap.TryGetValue*"></a>
+  <h4 id="GCore_Data_MPack_MPackMap_TryGetValue_GCore_Data_MPack_MPack_GCore_Data_MPack_MPack__" data-uid="GCore.Data.MPack.MPackMap.TryGetValue(GCore.Data.MPack.MPack,GCore.Data.MPack.MPack@)">TryGetValue(MPack, out MPack)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetValue(MPack key, out MPack value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GCore.Data.MPack.MPack.html">MPack</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IConvertible</span>
+  </div>
+  <div>
+      <span class="xref">IComparable&lt;&gt;</span>
+  </div>
+  <div>
+      <span class="xref">IDictionary&lt;, &gt;</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="GCore.Extensions.Class.ClassExtensions.html#GCore_Extensions_Class_ClassExtensions_ThrowIfArgumentIsNull__1___0_System_String_">ClassExtensions.ThrowIfArgumentIsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.EnumEx.EnumExtensions.html#GCore_Extensions_EnumEx_EnumExtensions_Flag__1___0___0_">EnumExtensions.Flag&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_Serialize__1___0_GCore_Extensions_SerializingEx_SerializingExtensions_Serializer_">SerializingExtensions.Serialize&lt;T&gt;(T, SerializingExtensions.Serializer)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeBinary__1___0_">SerializingExtensions.SerializeBinary&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeSoap__1___0_">SerializingExtensions.SerializeSoap&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeXML__1___0_System_Boolean_">SerializingExtensions.SerializeXML&lt;T&gt;(T, Boolean)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Data_MPack_MPackMap.md&amp;value=---%0Auid%3A%20GCore.Data.MPack.MPackMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Data/MPack/MPackMap.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
