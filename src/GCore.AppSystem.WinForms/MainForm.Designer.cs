@@ -36,8 +36,6 @@ namespace GCore.AppSystem.WinForms
             this.mainMenu = new System.Windows.Forms.MenuStrip();
             this.menuItemFile = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemView = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
@@ -58,8 +56,7 @@ namespace GCore.AppSystem.WinForms
             // 
             this.mainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItemFile,
-            this.menuItemView,
-            this.menuItemHelp});
+            this.menuItemView});
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
             this.mainMenu.Size = new System.Drawing.Size(1285, 24);
@@ -77,21 +74,6 @@ namespace GCore.AppSystem.WinForms
             this.menuItemView.Name = "menuItemView";
             this.menuItemView.Size = new System.Drawing.Size(44, 20);
             this.menuItemView.Text = "&View";
-            // 
-            // menuItemHelp
-            // 
-            this.menuItemHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemAbout});
-            this.menuItemHelp.Name = "menuItemHelp";
-            this.menuItemHelp.Size = new System.Drawing.Size(44, 20);
-            this.menuItemHelp.Text = "&Help";
-            // 
-            // menuItemAbout
-            // 
-            this.menuItemAbout.Name = "menuItemAbout";
-            this.menuItemAbout.Size = new System.Drawing.Size(288, 22);
-            this.menuItemAbout.Text = "&About GCore.AppSystem.WinForms";
-            this.menuItemAbout.Click += new System.EventHandler(this.menuItemAbout_Click);
             // 
             // statusStrip
             // 
@@ -176,8 +158,6 @@ namespace GCore.AppSystem.WinForms
         private MenuStrip mainMenu;
         private ToolStripMenuItem menuItemFile;
         private ToolStripMenuItem menuItemView;
-        private ToolStripMenuItem menuItemHelp;
-        private ToolStripMenuItem menuItemAbout;
         protected StatusStrip statusStrip;
         private ImageList imageList;
         private ToolStripContainer toolStripContainer;

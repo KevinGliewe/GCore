@@ -41,17 +41,9 @@ namespace GCore.AppSystem.WinForms
         #region GUI Events
         private void menuItemViewToolWindow_Click(object? sender, EventArgs e)
         {
-            var windowName = (sender as ToolStripLabel)?.Text ?? throw new Exception();
-            OpenToolWindow(windowName);
-        }
-
-        private void menuItemAbout_Click(object sender, EventArgs e)
-        {
-            var sb = new StringBuilder();
-            sb.AppendLine("FileVersion : " + AssemblyVersionConstants.FileVersion);
-            sb.AppendLine("InformationalVersion : " + AssemblyVersionConstants.InformationalVersion);
-            //sb.AppendLine("Build Timestamp : " + AppSystemManager.GetBuildDate(typeof(MainForm).Assembly));
-            MessageBox.Show(sb.ToString(), "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            var windowName = (sender as ToolStripLabel)?.Tag as String;
+            if(windowName is not null)
+                OpenToolWindow(windowName);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
