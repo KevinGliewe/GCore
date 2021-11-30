@@ -46,6 +46,10 @@
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="all" />
   </ItemGroup>
 
+  <ItemGroup>
+    <DotNetCliToolReference Include="ProjectVersioning.DotNet.Cli" Version="3.0.1" />
+  </ItemGroup>
+
   <Target Name="GenerateVersionInfo" BeforeTargets="CoreCompile">
     <Exec Command="dotnet tool restore" />
     <Exec Command="dotnet tool run rw-project-version -s=git -t=cs -v=$(VersionPrefix) -m=$(VersionSuffix)" />

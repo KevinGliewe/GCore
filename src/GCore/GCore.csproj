@@ -9,8 +9,4 @@
   <ItemGroup>
     <Folder Include="Extensions\IList\" />
   </ItemGroup>
-
-  <ItemGroup>
-    <DotNetCliToolReference Include="ProjectVersioning.DotNet.Cli" Version="3.0.1" />
-  </ItemGroup>
 </Project>

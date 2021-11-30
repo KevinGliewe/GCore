@@ -8,9 +8,10 @@ using System.Threading;
 using GCore.Threading;
 
 namespace GCore.Networking.Socket {
-    public class GSocketListener {
+    public class GSocketListener<T> where T: class {
         private int _port;
         private bool _active = true;
+        private Func<GSocketListener<T>, TcpClient, T> _activator = null;
 
         public int Port {
             get { return _port; }
@@ -24,11 +25,12 @@ namespace GCore.Networking.Socket {
 
         private GThread _acceptorThread;
 
-        public delegate void ClientArrivedHandler(GSocketListener sender, GSocket Client);
+        public delegate void ClientArrivedHandler(GSocketListener<T> sender, T Client);
         public event ClientArrivedHandler ClientArrived;
 
-        public GSocketListener(IPAddress address, int port, GSocketListener.ClientArrivedHandler handler, bool setReuseAddress = true) {
+        public GSocketListener(IPAddress address, int port, GSocketListener<T>.ClientArrivedHandler handler, bool setReuseAddress = true, Func<GSocketListener<T>, TcpClient, T> activator = null) {
             _port = port;
+            _activator = activator;
 
             ClientArrived += handler;
 
@@ -41,8 +43,9 @@ namespace GCore.Networking.Socket {
             _acceptorThread.Start();
         }
 
-        public GSocketListener(int port, GSocketListener.ClientArrivedHandler handler, bool setReuseAddress = true) {
+        public GSocketListener(int port, GSocketListener<T>.ClientArrivedHandler handler, bool setReuseAddress = true, Func<GSocketListener<T>, TcpClient, T> activator = null) {
             _port = port;
+            _activator = activator;
 
             ClientArrived += handler;
 
@@ -67,11 +70,48 @@ namespace GCore.Networking.Socket {
                     Thread.Sleep(100); // choose a number (in milliseconds) that makes sense
                     continue; // skip to next iteration of loop
                 }
-                TcpClient clientSocket = default(TcpClient);
-                clientSocket = _tcpListener.AcceptTcpClient();
-                GSocket gs = new GSocket(clientSocket);
-                if (ClientArrived != null) ClientArrived(this, gs);
+                TcpClient clientSocket = _tcpListener.AcceptTcpClient();
+
+                T tclient = null;
+
+                if (_activator is null)
+                {
+                    tclient = (T)Activator.CreateInstance(typeof(T) ,this, clientSocket);
+                }
+                else
+                {
+                    tclient = _activator(this, clientSocket);
+                }
+
+                if (ClientArrived != null) ClientArrived(this, tclient);
             }
         }
     }
+
+    public class GSocketListener : GSocketListener<GSocket>
+    {
+        public GSocketListener(IPAddress address, int port, ClientArrivedHandler handler, bool setReuseAddress = true) : base(address, port, handler, setReuseAddress, GSocketActivator)
+        {
+        }
+
+        public GSocketListener(int port, ClientArrivedHandler handler, bool setReuseAddress = true) : base(port, handler, setReuseAddress, GSocketActivator)
+        {
+        }
+
+        protected static GSocket GSocketActivator(GSocketListener<GSocket> self, TcpClient tcpClient) => new GSocket(tcpClient);
+    }
+
+    public class TcpSocketListener : GSocketListener<TcpClient>
+    {
+        public TcpSocketListener(IPAddress address, int port, ClientArrivedHandler handler, bool setReuseAddress = true) : base(address, port, handler, setReuseAddress, GSocketActivator)
+        {
+        }
+
+        public TcpSocketListener(int port, ClientArrivedHandler handler, bool setReuseAddress = true) : base(port, handler, setReuseAddress, GSocketActivator)
+        {
+        }
+
+        protected static TcpClient GSocketActivator(GSocketListener<TcpClient> self, TcpClient tcpClient) => tcpClient;
+    }
+
 }
