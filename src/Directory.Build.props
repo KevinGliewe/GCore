@@ -52,7 +52,7 @@
 
   <Target Name="GenerateVersionInfo" BeforeTargets="CoreCompile">
     <Exec Command="dotnet tool restore" />
-    <Exec Command="dotnet tool run rw-project-version -s=git -t=cs -v=$(VersionPrefix) -m=$(VersionSuffix)" />
+    <Exec Command="dotnet tool run rw-project-version -- -s=git -t=cs -v=$(VersionPrefix) -m=$(VersionSuffix)" />
     <ItemGroup>
       <Compile Remove="Properties\VersionInfo.cs" />
       <Compile Include="Properties\VersionInfo.cs" />

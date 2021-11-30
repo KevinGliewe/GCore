@@ -15,10 +15,15 @@ jobs:
         with:
           dotnet-version: 5.0.x
 
+      - name: Install .NET (v6.0)
+        uses: actions/setup-dotnet@v1.7.2
+        with:
+          dotnet-version: 6.0.x
+
       - name: Restore
         run: dotnet restore
         env:
           DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
 
-      - name: Build & test (.NET v5.0)
-        run: dotnet test --configuration Release --logger GitHubActions --framework net5.0
+      - name: Build & test (.NET v6.0)
+        run: dotnet test --configuration Release --logger GitHubActions --framework net6.0
