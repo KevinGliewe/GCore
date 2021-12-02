@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delegate Win32API.EnumThreadDelegate
+    <title>Class ControlExtensions
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Delegate Win32API.EnumThreadDelegate
+    <meta name="title" content="Class ControlExtensions
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -68,18 +68,40 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="GCore.Sys.Windows.Win32API.EnumThreadDelegate">
+            <article class="content wrap" id="_content" data-uid="GCore.WinForms.Extensions.ControlExtensions">
   
   
-  <h1 id="GCore_Sys_Windows_Win32API_EnumThreadDelegate" data-uid="GCore.Sys.Windows.Win32API.EnumThreadDelegate" class="text-break">Delegate Win32API.EnumThreadDelegate
+  <h1 id="GCore_WinForms_Extensions_ControlExtensions" data-uid="GCore.WinForms.Extensions.ControlExtensions" class="text-break">Class ControlExtensions
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Sys.Windows.html">GCore.Sys.Windows</a></h6>
-  <h6><strong>Assembly</strong>: GCore.dll</h6>
-  <h5 id="GCore_Sys_Windows_Win32API_EnumThreadDelegate_syntax">Syntax</h5>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ControlExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.WinForms.Extensions.html">GCore.WinForms.Extensions</a></h6>
+  <h6><strong>Assembly</strong>: GCore.WinForms.dll</h6>
+  <h5 id="GCore_WinForms_Extensions_ControlExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate bool EnumThreadDelegate(IntPtr hWnd, IntPtr lParam);</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ControlExtensions : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_WinForms_Extensions_ControlExtensions_RetainScrollPos_Control_System_Int32_.md&amp;value=---%0Auid%3A%20GCore.WinForms.Extensions.ControlExtensions.RetainScrollPos(Control%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore.WinForms/Extensions/ControlExtensions.cs/#L10">View Source</a>
+  </span>
+  <a id="GCore_WinForms_Extensions_ControlExtensions_RetainScrollPos_" data-uid="GCore.WinForms.Extensions.ControlExtensions.RetainScrollPos*"></a>
+  <h4 id="GCore_WinForms_Extensions_ControlExtensions_RetainScrollPos_Control_System_Int32_" data-uid="GCore.WinForms.Extensions.ControlExtensions.RetainScrollPos(Control,System.Int32)">RetainScrollPos(Control, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDisposable RetainScrollPos(this Control self, int bar = 1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -92,13 +114,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
-        <td><span class="parametername">hWnd</span></td>
+        <td><span class="xref">Control</span></td>
+        <td><span class="parametername">self</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
-        <td><span class="parametername">lParam</span></td>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">bar</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -113,30 +135,11 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">IDisposable</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="GCore.Extensions.Class.ClassExtensions.html#GCore_Extensions_Class_ClassExtensions_ThrowIfArgumentIsNull__1___0_System_String_">ClassExtensions.ThrowIfArgumentIsNull&lt;T&gt;(T, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="GCore.Extensions.EnumEx.EnumExtensions.html#GCore_Extensions_EnumEx_EnumExtensions_Flag__1___0___0_">EnumExtensions.Flag&lt;T&gt;(T, T)</a>
-  </div>
-  <div>
-      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_Serialize__1___0_GCore_Extensions_SerializingEx_SerializingExtensions_Serializer_">SerializingExtensions.Serialize&lt;T&gt;(T, SerializingExtensions.Serializer)</a>
-  </div>
-  <div>
-      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeBinary__1___0_">SerializingExtensions.SerializeBinary&lt;T&gt;(T)</a>
-  </div>
-  <div>
-      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeSoap__1___0_">SerializingExtensions.SerializeSoap&lt;T&gt;(T)</a>
-  </div>
-  <div>
-      <a class="xref" href="GCore.Extensions.SerializingEx.SerializingExtensions.html#GCore_Extensions_SerializingEx_SerializingExtensions_SerializeXML__1___0_System_Boolean_">SerializingExtensions.SerializeXML&lt;T&gt;(T, Boolean)</a>
-  </div>
 </article>
           </div>
           
@@ -145,10 +148,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Sys_Windows_Win32API_EnumThreadDelegate.md&amp;value=---%0Auid%3A%20GCore.Sys.Windows.Win32API.EnumThreadDelegate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_WinForms_Extensions_ControlExtensions.md&amp;value=---%0Auid%3A%20GCore.WinForms.Extensions.ControlExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Sys/Windows/Win32API.cs/#L1550" class="contribution-link">View Source</a>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore.WinForms/Extensions/ControlExtensions.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

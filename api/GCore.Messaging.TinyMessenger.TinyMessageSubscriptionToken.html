@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delegate Win32API.EnumThreadDelegate
+    <title>Class TinyMessageSubscriptionToken
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Delegate Win32API.EnumThreadDelegate
+    <meta name="title" content="Class TinyMessageSubscriptionToken
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -68,18 +68,42 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="GCore.Sys.Windows.Win32API.EnumThreadDelegate">
+            <article class="content wrap" id="_content" data-uid="GCore.Messaging.TinyMessenger.TinyMessageSubscriptionToken">
   
   
-  <h1 id="GCore_Sys_Windows_Win32API_EnumThreadDelegate" data-uid="GCore.Sys.Windows.Win32API.EnumThreadDelegate" class="text-break">Delegate Win32API.EnumThreadDelegate
+  <h1 id="GCore_Messaging_TinyMessenger_TinyMessageSubscriptionToken" data-uid="GCore.Messaging.TinyMessenger.TinyMessageSubscriptionToken" class="text-break">Class TinyMessageSubscriptionToken
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents an active subscription to a message</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Sys.Windows.html">GCore.Sys.Windows</a></h6>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TinyMessageSubscriptionToken</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Messaging.TinyMessenger.html">GCore.Messaging.TinyMessenger</a></h6>
   <h6><strong>Assembly</strong>: GCore.dll</h6>
-  <h5 id="GCore_Sys_Windows_Win32API_EnumThreadDelegate_syntax">Syntax</h5>
+  <h5 id="GCore_Messaging_TinyMessenger_TinyMessageSubscriptionToken_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate bool EnumThreadDelegate(IntPtr hWnd, IntPtr lParam);</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class TinyMessageSubscriptionToken : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Messaging_TinyMessenger_TinyMessageSubscriptionToken__ctor_GCore_Messaging_TinyMessenger_ITinyMessengerHub_Type_.md&amp;value=---%0Auid%3A%20GCore.Messaging.TinyMessenger.TinyMessageSubscriptionToken.%23ctor(GCore.Messaging.TinyMessenger.ITinyMessengerHub%2CType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Messaging/TinyMessenger.cs/#L147">View Source</a>
+  </span>
+  <a id="GCore_Messaging_TinyMessenger_TinyMessageSubscriptionToken__ctor_" data-uid="GCore.Messaging.TinyMessenger.TinyMessageSubscriptionToken.#ctor*"></a>
+  <h4 id="GCore_Messaging_TinyMessenger_TinyMessageSubscriptionToken__ctor_GCore_Messaging_TinyMessenger_ITinyMessengerHub_Type_" data-uid="GCore.Messaging.TinyMessenger.TinyMessageSubscriptionToken.#ctor(GCore.Messaging.TinyMessenger.ITinyMessengerHub,Type)">TinyMessageSubscriptionToken(ITinyMessengerHub, Type)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the TinyMessageSubscriptionToken class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TinyMessageSubscriptionToken(ITinyMessengerHub hub, Type messageType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -92,32 +116,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
-        <td><span class="parametername">hWnd</span></td>
+        <td><a class="xref" href="GCore.Messaging.TinyMessenger.ITinyMessengerHub.html">ITinyMessengerHub</a></td>
+        <td><span class="parametername">hub</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
-        <td><span class="parametername">lParam</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">messageType</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Messaging_TinyMessenger_TinyMessageSubscriptionToken_Dispose.md&amp;value=---%0Auid%3A%20GCore.Messaging.TinyMessenger.TinyMessageSubscriptionToken.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Messaging/TinyMessenger.cs/#L159">View Source</a>
+  </span>
+  <a id="GCore_Messaging_TinyMessenger_TinyMessageSubscriptionToken_Dispose_" data-uid="GCore.Messaging.TinyMessenger.TinyMessageSubscriptionToken.Dispose*"></a>
+  <h4 id="GCore_Messaging_TinyMessenger_TinyMessageSubscriptionToken_Dispose" data-uid="GCore.Messaging.TinyMessenger.TinyMessageSubscriptionToken.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="GCore.Extensions.Class.ClassExtensions.html#GCore_Extensions_Class_ClassExtensions_ThrowIfArgumentIsNull__1___0_System_String_">ClassExtensions.ThrowIfArgumentIsNull&lt;T&gt;(T, String)</a>
@@ -145,10 +171,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Sys_Windows_Win32API_EnumThreadDelegate.md&amp;value=---%0Auid%3A%20GCore.Sys.Windows.Win32API.EnumThreadDelegate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Messaging_TinyMessenger_TinyMessageSubscriptionToken.md&amp;value=---%0Auid%3A%20GCore.Messaging.TinyMessenger.TinyMessageSubscriptionToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Sys/Windows/Win32API.cs/#L1550" class="contribution-link">View Source</a>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Messaging/TinyMessenger.cs/#L139" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

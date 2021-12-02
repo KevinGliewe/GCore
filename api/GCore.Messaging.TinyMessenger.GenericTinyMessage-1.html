@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class AppSystemManager
+    <title>Class GenericTinyMessage&lt;TContent&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class AppSystemManager
+    <meta name="title" content="Class GenericTinyMessage&lt;TContent&gt;
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -68,44 +68,111 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="GCore.AppSystem.AppSystemManager">
+            <article class="content wrap" id="_content" data-uid="GCore.Messaging.TinyMessenger.GenericTinyMessage`1">
   
   
-  <h1 id="GCore_AppSystem_AppSystemManager" data-uid="GCore.AppSystem.AppSystemManager" class="text-break">Class AppSystemManager
+  <h1 id="GCore_Messaging_TinyMessenger_GenericTinyMessage_1" data-uid="GCore.Messaging.TinyMessenger.GenericTinyMessage`1" class="text-break">Class GenericTinyMessage&lt;TContent&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Generic message with user specified content</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">AppSystemManager</span></div>
+    <div class="level1"><a class="xref" href="GCore.Messaging.TinyMessenger.TinyMessageBase.html">TinyMessageBase</a></div>
+    <div class="level2"><span class="xref">GenericTinyMessage&lt;TContent&gt;</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="GCore.AppSystem.IAppSystemManager.html">IAppSystemManager</a></div>
+    <div><a class="xref" href="GCore.Messaging.TinyMessenger.ITinyMessage.html">ITinyMessage</a></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.AppSystem.html">GCore.AppSystem</a></h6>
-  <h6><strong>Assembly</strong>: GCore.AppSystem.dll</h6>
-  <h5 id="GCore_AppSystem_AppSystemManager_syntax">Syntax</h5>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GCore.Messaging.TinyMessenger.TinyMessageBase.html#GCore_Messaging_TinyMessenger_TinyMessageBase_Sender">TinyMessageBase.Sender</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GCore.Messaging.TinyMessenger.html">GCore.Messaging.TinyMessenger</a></h6>
+  <h6><strong>Assembly</strong>: GCore.dll</h6>
+  <h5 id="GCore_Messaging_TinyMessenger_GenericTinyMessage_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppSystemManager : object, IAppSystemManager</code></pre>
+    <pre><code class="lang-csharp hljs">public class GenericTinyMessage&lt;TContent&gt; : TinyMessageBase, ITinyMessage</code></pre>
   </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContent</span></td>
+        <td><p>Content type to store</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Messaging_TinyMessenger_GenericTinyMessage_1__ctor_System_Object__0_.md&amp;value=---%0Auid%3A%20GCore.Messaging.TinyMessenger.GenericTinyMessage%601.%23ctor(System.Object%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Messaging/TinyMessenger.cs/#L96">View Source</a>
+  </span>
+  <a id="GCore_Messaging_TinyMessenger_GenericTinyMessage_1__ctor_" data-uid="GCore.Messaging.TinyMessenger.GenericTinyMessage`1.#ctor*"></a>
+  <h4 id="GCore_Messaging_TinyMessenger_GenericTinyMessage_1__ctor_System_Object__0_" data-uid="GCore.Messaging.TinyMessenger.GenericTinyMessage`1.#ctor(System.Object,`0)">GenericTinyMessage(Object, TContent)</h4>
+  <div class="markdown level1 summary"><p>Create a new instance of the GenericTinyMessage class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenericTinyMessage(object sender, TContent content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>Message sender (usually &quot;this&quot;)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>Contents of the message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_AppSystem_AppSystemManager_Config.md&amp;value=---%0Auid%3A%20GCore.AppSystem.AppSystemManager.Config%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Messaging_TinyMessenger_GenericTinyMessage_1_Content.md&amp;value=---%0Auid%3A%20GCore.Messaging.TinyMessenger.GenericTinyMessage%601.Content%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore.AppSystem/AppSystemManager.cs/#L18">View Source</a>
+    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Messaging/TinyMessenger.cs/#L89">View Source</a>
   </span>
-  <a id="GCore_AppSystem_AppSystemManager_Config_" data-uid="GCore.AppSystem.AppSystemManager.Config*"></a>
-  <h4 id="GCore_AppSystem_AppSystemManager_Config" data-uid="GCore.AppSystem.AppSystemManager.Config">Config</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="GCore_Messaging_TinyMessenger_GenericTinyMessage_1_Content_" data-uid="GCore.Messaging.TinyMessenger.GenericTinyMessage`1.Content*"></a>
+  <h4 id="GCore_Messaging_TinyMessenger_GenericTinyMessage_1_Content" data-uid="GCore.Messaging.TinyMessenger.GenericTinyMessage`1.Content">Content</h4>
+  <div class="markdown level1 summary"><p>Contents of the message</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IConfiguration Config { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TContent Content { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -117,44 +184,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IConfiguration</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_AppSystem_AppSystemManager_Services.md&amp;value=---%0Auid%3A%20GCore.AppSystem.AppSystemManager.Services%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore.AppSystem/AppSystemManager.cs/#L19">View Source</a>
-  </span>
-  <a id="GCore_AppSystem_AppSystemManager_Services_" data-uid="GCore.AppSystem.AppSystemManager.Services*"></a>
-  <h4 id="GCore_AppSystem_AppSystemManager_Services" data-uid="GCore.AppSystem.AppSystemManager.Services">Services</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IContainer Services { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IContainer</span></td>
+        <td><span class="xref">TContent</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="GCore.AppSystem.IAppSystemManager.html">IAppSystemManager</a>
+      <a class="xref" href="GCore.Messaging.TinyMessenger.ITinyMessage.html">ITinyMessage</a>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
@@ -183,10 +220,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_AppSystem_AppSystemManager.md&amp;value=---%0Auid%3A%20GCore.AppSystem.AppSystemManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/KevinGliewe/GCore/new/master/apiSpec/new?filename=GCore_Messaging_TinyMessenger_GenericTinyMessage_1.md&amp;value=---%0Auid%3A%20GCore.Messaging.TinyMessenger.GenericTinyMessage%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore.AppSystem/AppSystemManager.cs/#L17" class="contribution-link">View Source</a>
+                    <a href="https://github.com/KevinGliewe/GCore/blob/master/src/GCore/Messaging/TinyMessenger.cs/#L84" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
