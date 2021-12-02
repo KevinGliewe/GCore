@@ -1478,6 +1478,9 @@ namespace GCore.Sys.Windows {
             }
         }
 
+        public const int EM_LINESCROLL = 0x00B6;
+
+
         public const uint WM_PAINT = 0x000F;
 
         public const int GWL_EXSTYLE = -20;
@@ -1486,6 +1489,13 @@ namespace GCore.Sys.Windows {
         public const uint PW_CLIENTONLY = 0x00000001;
 
         public const int MAXIMUM_ALLOWED = 0x02000000;
+
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern int GetScrollPos(IntPtr hWnd, int nBar);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern int SetScrollPos(IntPtr hWnd, int nBar,
+            int nPos, bool bRedraw);
 
         [DllImport("User32.dll", SetLastError = true)]
         public static extern IntPtr OpenWindowStation(String lpszWinSta, bool fInherit, int dwDesiredAccess);
