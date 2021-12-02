@@ -31,6 +31,9 @@ public class HandlerAttribute : Attribute
             foreach (var ia in ass.GetTypes().Select(t => new {T = t, A = GetAttributeFromType(t)})
                          .Where(t => t.A is not null))
             {
+                if(config[ia.A?.ConfigName ?? ""] == "#")
+                    continue;
+
                 var implementationName = config[ia.A?.ConfigName ?? ""] ?? 
                                          (ia.A?.DefaultImplementation.Contains('.') ?? true 
                                              ? ia.A?.DefaultImplementation 
