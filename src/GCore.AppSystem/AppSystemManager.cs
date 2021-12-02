@@ -11,6 +11,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using GCore.AppSystem.Config;
 using GCore.AppSystem.Handler;
+using GCore.Messaging.TinyMessenger;
 
 namespace GCore.AppSystem {
     public class AppSystemManager : IAppSystemManager {
@@ -55,6 +56,7 @@ namespace GCore.AppSystem {
             builder
                 .AddSingleton(Config)
                 .AddSingleton(this)
+                .AddSingleton<ITinyMessengerHub, TinyMessengerHub>()
                 .Register(c => this.Services).As<IContainer>();
         }
     }
