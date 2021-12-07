@@ -27,15 +27,12 @@ public static class ControlExtensions
             _pos = Win32API.GetScrollPos(handle, bar);
         }
 
-
-        [DllImport("user32.dll")]
-        static extern int SendMessage(IntPtr hWnd, int wMsg,
-            int wParam, int lParam);
-
         public void Dispose()
         {
+            var delta = _pos - Win32API.GetScrollPos(_handle, _bar);
+
             Win32API.SetScrollPos(_handle, _bar, _pos, true);
-            Win32API.SendMessage(_handle, Win32API.EM_LINESCROLL, 0, (uint)_pos);
+            Win32API.SendMessage(_handle, Win32API.EM_LINESCROLL, 0, (uint)delta);
         }
     }
 }
