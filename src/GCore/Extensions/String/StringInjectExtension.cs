@@ -3,6 +3,7 @@ using System.Text.RegularExpressions;
 using System.Collections;
 using System.Globalization;
 using System.ComponentModel;
+using System.Collections.Generic;
 
 [assembly: CLSCompliant(true)]
 namespace GCore.Extensions.StringEx.Inject {
@@ -98,5 +99,21 @@ namespace GCore.Extensions.StringEx.Inject {
             return values;
         }
 
+        /// <summary>
+        /// Injects the dictionary into the string.
+        /// Example: "Hello $(World)"
+        /// </summary>
+        /// <param name="self"></param>
+        /// <param name="inject"></param>
+        /// <returns></returns>
+        public static string SimpleInject(this string self, IReadOnlyDictionary<string, string> inject)
+        {
+            if (inject is null) return self;
+
+            foreach (var prop in inject)
+                self = self.Replace($"$({prop.Key})", prop.Value);
+
+            return self;
+        }
     }
 }
