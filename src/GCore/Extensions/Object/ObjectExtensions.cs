@@ -63,6 +63,22 @@ namespace GCore.Extensions.ObjectEx {
             return t.Equals(thisType) || thisType.IsSubclassOf(t) || t.IsAssignableFrom(thisType);
         }
 
+        // https://stackoverflow.com/a/1130705
+        public static bool IsNumber(this object value)
+        {
+            return value is sbyte
+                    || value is byte
+                    || value is short
+                    || value is ushort
+                    || value is int
+                    || value is uint
+                    || value is long
+                    || value is ulong
+                    || value is float
+                    || value is double
+                    || value is decimal;
+        }
+
         public static string Dump(this System.Object this_)
         {
             return GCore.Data.Dump.ToDump(this_);
