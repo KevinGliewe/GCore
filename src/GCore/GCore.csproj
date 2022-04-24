@@ -9,5 +9,6 @@
   <ItemGroup>
     <Folder Include="Data\Filter\" />
     <Folder Include="Extensions\IList\" />
+    <Folder Include="Extensions\Assembly\" />
   </ItemGroup>
 </Project>

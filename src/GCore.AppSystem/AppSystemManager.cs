@@ -7,16 +7,21 @@ using Autofac;
 using GCore.Logging;
 using GCore.AppSystem.Extensions;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using GCore.AppSystem.Config;
 using GCore.AppSystem.Handler;
+using GCore.Extensions.AssemblyEx;
 using GCore.Messaging.TinyMessenger;
+using Zio;
+using Zio.FileSystems;
 
 namespace GCore.AppSystem {
     public class AppSystemManager : IAppSystemManager {
         public IConfiguration Config { get; private set; }
         public IContainer Services { get; private set; }
+        public IFileSystem FileSystem { get; private set; }
 
         internal AppSystemManager(IEnumerable<IAppSystemExtension> appExtensions, IEnumerable<Assembly> assemblies)
         {
@@ -33,6 +38,15 @@ namespace GCore.AppSystem {
             foreach (var entry in Config.AsEnumerable())
                 Log.Debug($"  {entry.Key} = {entry.Value}");
 
+
+            {
+                // Initialize FileSystem
+                var mfs = new MountFileSystem();
+                var pfs = new PhysicalFileSystem();
+                mfs.Mount("/cd", new SubFileSystem(pfs, pfs.ConvertPathFromInternal(Directory.GetCurrentDirectory())));
+                mfs.Mount("/exe", new SubFileSystem(pfs, pfs.ConvertPathFromInternal(Assembly.GetExecutingAssembly().GetBetterLocationDir())));
+                FileSystem = mfs;
+            }
 
             // Initialize Services
             var serviceCollection = new ContainerBuilder();
@@ -56,6 +70,7 @@ namespace GCore.AppSystem {
             builder
                 .AddSingleton(Config)
                 .AddSingleton(this)
+                .AddSingleton<IFileSystem>(FileSystem)
                 .AddSingleton<ITinyMessengerHub, TinyMessengerHub>()
                 .Register(c => this.Services).As<IContainer>();
         }
